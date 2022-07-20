@@ -17,7 +17,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
 
-##### Bloco 3: [Introdução à HTML e CSS](https://github.com/paulohbsimoes/trybe-exercises/tree/master/01-fundamentos/bloco-01-unix-bash-e-shell-script)
+##### Bloco 3: [Introdução à HTML e CSS](https://github.com/luizlacerdam/trybe-exercicios/tree/fundamentos/01-fundamentos/bloco-03-introducao-a-html-e-css)
 - [x] 3.1 - Introdução - HTML & CSS
 - [x] 3.1 - HTML & CSS - Estruturas de página
 - [x] 3.2 - HTML & CSS - Primeiros passos em CSS
@@ -27,7 +27,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ##### Bloco 4: [Introdução à JavaScript e Lógica de Programação]
 - [x] 4.1 - Introdução - JavaScript
-- [] 4.1 - JavaScript - Primeiros passos
+- [ ] 4.1 - JavaScript - Primeiros passos
 - [] 4.2 - JavaScript - Array e loop For
 - [] 4.3 - JavaScript - Lógica de Programação e Algoritmos
 - [] 4.4 - JavaScript - Objetos e funções
