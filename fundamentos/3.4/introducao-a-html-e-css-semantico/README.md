@@ -15,4 +15,4 @@ As outras seções dizem respeito aos fatos interessantes que você escolheu ace
 - Adicione, para cada seção, uma imagem, como forma de ilustrar o fato.
 - Adicione, por fim, uma seção de referências bibliográficas, contendo uma lista de todos os links que foram usados como base para compilar a página em questão.
 5. Adicione um conteúdo adjacente ao artigo, disponibilizando um link para este vídeo, que mostra o animal em ação.
-6. Adicione um rodapé na página, mostrando algo do gênero:
+6. Adicione um rodapé na página, mostrando algo do gênero: "Conteúdo compilado por <insere seu nome>, <ano atual>".
