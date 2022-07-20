@@ -24,3 +24,10 @@ Entre neste site, que valida se sua página é acessível ou não. Para isso, vo
 Ao submeter o código, você vai se deparar com erros de validação presentes em sua página, dando início a seu segundo exercício: consertar todos os erros apontados.
 Para cada erro de validação mostrado, você tem à disposição um link para a página com sua descrição. Antes de voltar para o código e já ir consertando, leia a descrição de cada erro para entendê-lo e poder consertá-lo.
 No fim do exercício, além de ter uma página acessível, você vai reforçar a prática de consertar erros, seja de validação (para este exercício), seja de lógica, com que você vai se deparar ao longo de sua carreira de desenvolvedor.
+
+Como alternativa, podemos usar o Lighthouse para verificar a acessibilidade e outras coisas. Para isto, abra o site que criou utilizando a extensão Live Server do VSCode. Iremos utilizar o DevTools do navegador Chrome para analisar a acessibilidade, seguindo os seguintes passos:
+1. Abra o DevTools utilizando uma das seguintes formas: (OBS: Você deverá estar na janela do navegador)
+- Aperte a tecla F12;
+- Utilize o atalho CTRL + SHIFT + I;
+- Através da interface clique nos três pontos na parte superior direita da tela abrirá um menu, clique em More tools e depois em Developer Tools.
+No menu superior haverão várias abas, a que queremos se chama Lighthouse. Caso ela esteja escondida, procure por um botão com o ícone similar a >>.
