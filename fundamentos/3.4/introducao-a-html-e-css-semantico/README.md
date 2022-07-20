@@ -16,3 +16,11 @@ As outras seções dizem respeito aos fatos interessantes que você escolheu ace
 - Adicione, por fim, uma seção de referências bibliográficas, contendo uma lista de todos os links que foram usados como base para compilar a página em questão.
 5. Adicione um conteúdo adjacente ao artigo, disponibilizando um link para este vídeo, que mostra o animal em ação.
 6. Adicione um rodapé na página, mostrando algo do gênero: "Conteúdo compilado por <insere seu nome>, <ano atual>".
+
+Agora que você criou a página mostrando fatos interessantes a respeito do Stomatopoda, suponha que uma pessoa com deficiência visual acesse sua página. Será que sua página estará acessível para essa pessoa? 🤔
+Vamos averiguar!
+Entre neste site, que valida se sua página é acessível ou não. Para isso, você deverá copiar o código HTML e colar na caixa em baixo de "Run your code through the Sniffer".
+
+Ao submeter o código, você vai se deparar com erros de validação presentes em sua página, dando início a seu segundo exercício: consertar todos os erros apontados.
+Para cada erro de validação mostrado, você tem à disposição um link para a página com sua descrição. Antes de voltar para o código e já ir consertando, leia a descrição de cada erro para entendê-lo e poder consertá-lo.
+No fim do exercício, além de ter uma página acessível, você vai reforçar a prática de consertar erros, seja de validação (para este exercício), seja de lógica, com que você vai se deparar ao longo de sua carreira de desenvolvedor.
