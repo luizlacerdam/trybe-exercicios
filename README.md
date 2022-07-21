@@ -1,6 +1,6 @@
 # Trybe - Exercícios
 
-Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/paulohbsimoes/)__ durante minha tragetória na [Trybe](https://www.betrybe.com/) :rocket:
+Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/luizlacerdam/)__ durante minha tragetória na [Trybe](https://www.betrybe.com/) :rocket:
 
 >"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
 
@@ -27,8 +27,8 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ##### Bloco 4: [Introdução à JavaScript e Lógica de Programação]
 - [x] 4.1 - Introdução - JavaScript
-- [ ] 4.1 - JavaScript - Primeiros passos
-- [ ] 4.3 - JavaScript - Lógica de Programação e Algoritmos
+- [x] 4.1 - JavaScript - Primeiros passos
+- [x] 4.3 - JavaScript - Lógica de Programação e Algoritmos
 - [ ] 4.4 - JavaScript - Objetos e funções
 - [ ] 4.5 - Projeto - Playground Functions
 - [ ] 4.2 - JavaScript - Array e loop For
