@@ -83,4 +83,9 @@ let array = [];
 for (let i = 1; i < 26; i += 1) {
     array.push(i);
 }
-console.log(array);
+// console.log(array);
+
+//Exercício 9
+for(let n of array) {
+    console.log(n/2);
+}
