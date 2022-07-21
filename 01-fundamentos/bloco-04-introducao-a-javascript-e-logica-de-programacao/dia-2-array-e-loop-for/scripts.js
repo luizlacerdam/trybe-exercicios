@@ -64,15 +64,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 //Exercício 7
-let lower;
+// let lower;
 
-for (let i = 0; i < numbers.length; i += 1) {
-    if (i == 0) {
-        lower = numbers[0];
-    } else {
-        if (numbers[i] < lower) {
-            lower = numbers[i];
-        }
-    }
+// for (let i = 0; i < numbers.length; i += 1) {
+//     if (i == 0) {
+//         lower = numbers[0];
+//     } else {
+//         if (numbers[i] < lower) {
+//             lower = numbers[i];
+//         }
+//     }
+// }
+// console.log(lower);
+
+//Exercício 8
+let array = [];
+
+for (let i = 1; i < 26; i += 1) {
+    array.push(i);
 }
-console.log(lower);
+console.log(array);
