@@ -49,16 +49,30 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(higher);
 
 //Exercício 6
-let impares = 0;
+// let impares = 0;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 != 0) {
+//         impares += 1;
+//     }
+// }
+
+// if (impares > 0) {
+//     console.log(impares);
+// } else {
+//     console.log('Nenhum valor ímpar encontrado.');
+// }
+
+//Exercício 7
+let lower;
 
 for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i] % 2 != 0) {
-        impares += 1;
+    if (i == 0) {
+        lower = numbers[0];
+    } else {
+        if (numbers[i] < lower) {
+            lower = numbers[i];
+        }
     }
 }
-
-if (impares > 0) {
-    console.log(impares);
-} else {
-    console.log('Nenhum valor ímpar encontrado.');
-}
+console.log(lower);
