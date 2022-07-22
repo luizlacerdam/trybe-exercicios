@@ -1,18 +1,12 @@
 //Exercicio 1
-let fatorial = 3;
-let sum = 0;
-let array = [];
-
-for (let i = fatorial; i > 0; i--) {
-    array.push(i);
+let fatorial = 5;
+let mult = 1;
+// 3*2*1
+while (fatorial > 1) {
+    mult = fatorial * mult;
+    fatorial = fatorial - 1
 }
+console.log(mult);
 
-for (let i = 0; i < array.length; i++) {
-    if (i == array.length - 1) {
-        sum += array[i];
-    } else {
-        sum += (array[i] * array[i + 1]);
-    }
-    
-}
-console.log(sum);
+//mult = 6 fatorial = 2
+//mult = 2
