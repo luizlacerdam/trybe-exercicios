@@ -8,5 +8,11 @@ while (fatorial > 1) {
 }
 console.log(mult);
 
-//mult = 6 fatorial = 2
-//mult = 2
+//Exercicio 2
+let palavra = 'tryber';
+let inverso = [];
+
+for (let i = 0; i < palavra.length; i += 1) {
+    inverso.unshift(palavra[i])
+}
+console.log(inverso);
