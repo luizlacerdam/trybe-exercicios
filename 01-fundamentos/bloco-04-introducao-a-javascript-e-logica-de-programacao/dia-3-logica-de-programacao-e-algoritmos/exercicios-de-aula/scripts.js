@@ -50,4 +50,13 @@ for (let i = 0; i < array.length; i += 1) {
 
 console.log(palavraMenor);
 
+//Exercicio 4
+let maiorPrimo = 1;
 
+for (let i = 0; i < 51 ; i+= 1) {
+    if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0) {
+        maiorPrimo = i;
+    }
+}
+
+console.log(maiorPrimo);
