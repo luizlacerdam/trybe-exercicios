@@ -1,6 +1,12 @@
+### Pegue cada um dos exercícios de 1 a 5 do final do dia 4.1 e faça com que todos eles sejam funções de um mesmo arquivo. As variáveis que você define no começo de cada arquivo devem ser removidas e transformadas em parâmetros das funções.
+
 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
 - Adição (a + b)
 - Subtração (a - b)
 - Multiplicação (a * b)
 - Divisão (a / b)
 - Módulo (a % b)
+
+2. Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+
+3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
