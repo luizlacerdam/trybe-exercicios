@@ -81,26 +81,49 @@ const c = 300;
 // console.log(isTriangulo(a,b,c));
 
 //Exercicio 6
-let peca = 'bispo';
+// let peca = 'bispo';
 
+// function chess(lowerPeca) {
+// lowerPeca = peca.toLowerCase()
 
-function chess(lowerPeca) {
-lowerPeca = peca.toLowerCase()
+// switch (lowerPeca) {
+//     case 'peao':
+//         return 'casa pra frente';
+//     case 'cavalo':
+//         return 'movimenta-se em L';
+//     case 'torre':
+//         return 'movimenta-se em linha reta';
+//     case 'dama':
+//         return 'movimenta-se em qualquer direção';
+//     case 'rei':
+//         return 'movimenta-se em qualquer direção uma casa';
+//     case 'bispo':
+//         return 'diagonais'; 
+// }
+// }
 
-switch (lowerPeca) {
-    case 'peao':
-        return 'casa pra frente';
-    case 'cavalo':
-        return 'movimenta-se em L';
-    case 'torre':
-        return 'movimenta-se em linha reta';
-    case 'dama':
-        return 'movimenta-se em qualquer direção';
-    case 'rei':
-        return 'movimenta-se em qualquer direção uma casa';
-    case 'bispo':
-        return 'diagonais'; 
+// console.log(chess(peca));
+
+//Exercicio 7
+let n1 = 100;
+
+function porcent(nota) {  
+
+if (nota >= 90 && nota <= 100) {
+    return 'A';
+} else if (nota >= 80 && nota < 90) {
+    return 'B';
+} else if (nota >= 70 && nota < 80) {
+    return 'C';
+} else if (nota >= 60 && nota < 70 ) {
+    return 'D';
+} else if (nota >= 50 && nota < 60) {
+    return 'E';
+} else if (nota < 50 && nota >= 0) {
+    return 'F'
+} else {
+    return ('Error');
 }
 }
 
-console.log(chess(peca));
+console.log(porcent(n1));
