@@ -1,6 +1,7 @@
 //Exercicio 1
 const a = 2;
 const b = 5;
+const c = 300;
 
 // function add(num1, num2) {
 //     return num1 + num2;
@@ -41,16 +42,16 @@ const b = 5;
 // console.log(maiorDeDois(a,b));
 
 //Exercicio 3
-// function menorDeDois(num1, num2) {
-//     if (num1 < num2) {
+// function maiorDeTres(num1, num2, num3) {
+//     if (num1 > num2 && num1 > num3) {
 //         return num1;
-//     } else if (num2 < num1) {
+//     } else if (num2 > num1 && num2 > num3) {
 //         return num2;
 //     } else {
-//         return null;
+//         return num3;
 //     }
 // }
 
-// console.log(menorDeDois(a,b));
+// console.log(maiorDeTres(a,b,c));
 
 //Exercicio 4
