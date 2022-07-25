@@ -55,14 +55,27 @@ const c = 300;
 // console.log(maiorDeTres(a,b,c));
 
 //Exercicio 4
-function whatBolean(num1) {
-    if (num1 > 0) {
-        return 'positive';
-    } else if (num1 < 0) {
-        return 'negative';
+// function whatBolean(num1) {
+//     if (num1 > 0) {
+//         return 'positive';
+//     } else if (num1 < 0) {
+//         return 'negative';
+//     } else {
+//         return 'zero';
+//     }
+// }
+
+// console.log(whatBolean(a));
+
+//Exercicio 5
+function isTriangulo(num1, num2, num3) {
+    if (num1 < 0 || num2 < 0 || num3 < 0) {
+        return false;
+    } else if (num1 + num2 + num3 == 180) {
+        return true;
     } else {
-        return 'zero';
+        return false;
     }
 }
 
-console.log(whatBolean(a));
+console.log(isTriangulo(a,b,c));
