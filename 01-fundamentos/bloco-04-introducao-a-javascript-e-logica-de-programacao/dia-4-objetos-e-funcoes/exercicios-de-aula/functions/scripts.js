@@ -1,5 +1,5 @@
 //Exercicio 1
-const a = 2;
+const a = 3;
 const b = 5;
 const c = 300;
 
@@ -105,25 +105,35 @@ const c = 300;
 // console.log(chess(peca));
 
 //Exercicio 7
-let n1 = 100;
+// let n1 = 100;
 
-function porcent(nota) {  
+// function porcent(nota) {  
 
-if (nota >= 90 && nota <= 100) {
-    return 'A';
-} else if (nota >= 80 && nota < 90) {
-    return 'B';
-} else if (nota >= 70 && nota < 80) {
-    return 'C';
-} else if (nota >= 60 && nota < 70 ) {
-    return 'D';
-} else if (nota >= 50 && nota < 60) {
-    return 'E';
-} else if (nota < 50 && nota >= 0) {
-    return 'F'
-} else {
-    return ('Error');
-}
-}
+// if (nota >= 90 && nota <= 100) {
+//     return 'A';
+// } else if (nota >= 80 && nota < 90) {
+//     return 'B';
+// } else if (nota >= 70 && nota < 80) {
+//     return 'C';
+// } else if (nota >= 60 && nota < 70 ) {
+//     return 'D';
+// } else if (nota >= 50 && nota < 60) {
+//     return 'E';
+// } else if (nota < 50 && nota >= 0) {
+//     return 'F'
+// } else {
+//     return ('Error');
+// }
+// }
 
-console.log(porcent(n1));
+// console.log(porcent(n1));
+
+//Exercicio 8
+// function umPar(num1, num2, num3) {
+//     if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(umPar(a,b,c));
