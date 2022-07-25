@@ -13,6 +13,11 @@ info.recorrente = 'Sim';
 console.log(info.recorrente);
 
 //Exercicio 3
-for (const key in info) {
+for (let key in info) {
     console.log(key);
+}
+
+//Exercicio 4
+for (let key in info) {
+    console.log(info[key]);
 }
