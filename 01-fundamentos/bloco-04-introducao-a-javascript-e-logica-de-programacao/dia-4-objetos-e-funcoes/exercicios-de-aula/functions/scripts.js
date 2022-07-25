@@ -68,14 +68,39 @@ const c = 300;
 // console.log(whatBolean(a));
 
 //Exercicio 5
-function isTriangulo(num1, num2, num3) {
-    if (num1 < 0 || num2 < 0 || num3 < 0) {
-        return false;
-    } else if (num1 + num2 + num3 == 180) {
-        return true;
-    } else {
-        return false;
-    }
+// function isTriangulo(num1, num2, num3) {
+//     if (num1 < 0 || num2 < 0 || num3 < 0) {
+//         return false;
+//     } else if (num1 + num2 + num3 == 180) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(isTriangulo(a,b,c));
+
+//Exercicio 6
+let peca = 'bispo';
+
+
+function chess(lowerPeca) {
+lowerPeca = peca.toLowerCase()
+
+switch (lowerPeca) {
+    case 'peao':
+        return 'casa pra frente';
+    case 'cavalo':
+        return 'movimenta-se em L';
+    case 'torre':
+        return 'movimenta-se em linha reta';
+    case 'dama':
+        return 'movimenta-se em qualquer direção';
+    case 'rei':
+        return 'movimenta-se em qualquer direção uma casa';
+    case 'bispo':
+        return 'diagonais'; 
+}
 }
 
-console.log(isTriangulo(a,b,c));
+console.log(chess(peca));
