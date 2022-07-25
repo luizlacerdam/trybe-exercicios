@@ -55,3 +55,14 @@ const c = 300;
 // console.log(maiorDeTres(a,b,c));
 
 //Exercicio 4
+function whatBolean(num1) {
+    if (num1 > 0) {
+        return 'positive';
+    } else if (num1 < 0) {
+        return 'negative';
+    } else {
+        return 'zero';
+    }
+}
+
+console.log(whatBolean(a));
