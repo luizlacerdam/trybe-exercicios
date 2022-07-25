@@ -139,12 +139,31 @@ const c = 300;
 // console.log(umPar(a,b,c));
 
 //Exercicio 9
-function umImpar(num1,num2,num3) {
-    if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
-        return true;
-    } else {
-        return false;
-    }
+// function umImpar(num1,num2,num3) {
+//     if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(umImpar(a,b,c));
+
+//Exercicio 10
+const valorC = 100;
+const valorV = 200;
+let impostoA = 1.2;
+
+function custoDoProduto(valorCusto,valorVenda,imposto) {
+
+if (valorCusto < 0 || valorVenda < 0) {
+    return 'Custo ou venda negativos.';
 }
 
-console.log(umImpar(a,b,c));
+let valorCustoTotal = valorCusto * imposto;
+let lucro = valorVenda - valorCustoTotal;
+
+return lucro;
+}
+
+console.log(custoDoProduto(valorC,valorV, impostoA));
