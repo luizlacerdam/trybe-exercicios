@@ -111,24 +111,46 @@
 // console.log(maisSeRepete(arrayTest));
 
 //Exercicio 6
+// let n = 5;
 
-let n = 5;
-
-function somatorio(n) {
-    if (n < 0) {
-        return 'Error! Número menor que zero.';
-    }
+// function somatorio(n) {
+//     if (n < 0) {
+//         return 'Error! Número menor que zero.';
+//     }
     
-    if (n % 1 !== 0) {
-        return 'Error! Número não inteiro.';
-    }
+//     if (n % 1 !== 0) {
+//         return 'Error! Número não inteiro.';
+//     }
 
-    let sum = 0;
+//     let sum = 0;
 
-    for (let i = 0; i <= n; i+= 1) {
-        sum += i
+//     for (let i = 0; i <= n; i+= 1) {
+//         sum += i
+//     }
+//     return sum;
+// }
+
+// console.log(somatorio(n));
+
+//Exercicio 7
+let stringWord = 'Trybe';
+let stringEnd = 'be';
+
+function verificaFimPalavra(word, end) {
+    let isend = false;
+    let count = 0;
+    let reverseWord = word.split('').reverse();
+    let reverseEnd = end.split('').reverse();
+
+    for (let i = 0; i < end.length; i += 1) {
+        if (reverseWord[i] != reverseEnd[i]) {
+            count += 1;
+        }
     }
-    return sum;
+    if (count == 0) {
+        isend = true;
+    }
+    return isend;
 }
 
-console.log(somatorio(n));
+console.log(verificaFimPalavra(stringWord, stringEnd));
