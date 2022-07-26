@@ -78,34 +78,57 @@
 // console.log(nomeMaior(arrayTest));
 
 //Exercicio 5
-let arrayTest = [2, 3, 2, 5, 8, 2, 3, 3, 6, 8, 3, 8, 8, 8, 8];
+// let arrayTest = [2, 3, 2, 5, 8, 2, 3, 3, 6, 8, 3, 8, 8, 8, 8];
 
-function maisSeRepete(array) {
-    let repeticoes = [];
-    let maisSeRepete;
-    for (let i = 0; i < array.length; i += 1) {
-        let serepete = 0;
-        for (let n = i; n < array.length; n += 1) {
-            if (array[i] == array[n]) {
-                serepete += 1;
-            }
-        }
-        repeticoes.push(serepete);
+// function maisSeRepete(array) {
+//     let repeticoes = [];
+//     let maisSeRepete;
+//     for (let i = 0; i < array.length; i += 1) {
+//         let serepete = 0;
+//         for (let n = i; n < array.length; n += 1) {
+//             if (array[i] == array[n]) {
+//                 serepete += 1;
+//             }
+//         }
+//         repeticoes.push(serepete);
+//     }
+    
+//     let index;
+
+//     for (let i = 0; i < repeticoes.length; i += 1) {
+//         if (i == 0) {
+//             index = i;
+//         } else {
+//             if (repeticoes[i] > repeticoes[i - 1]) {
+//                 index = i
+//             }
+            
+//         }
+//     }
+//     return array[index];
+// }
+
+// console.log(maisSeRepete(arrayTest));
+
+//Exercicio 6
+
+let n = 5;
+
+function somatorio(n) {
+    if (n < 0) {
+        return 'Error! Número menor que zero.';
     }
     
-    let index;
-
-    for (let i = 0; i < repeticoes.length; i += 1) {
-        if (i == 0) {
-            index = i;
-        } else {
-            if (repeticoes[i] > repeticoes[i - 1]) {
-                index = i
-            }
-            
-        }
+    if (n % 1 !== 0) {
+        return 'Error! Número não inteiro.';
     }
-    return array[index];
+
+    let sum = 0;
+
+    for (let i = 0; i <= n; i+= 1) {
+        sum += i
+    }
+    return sum;
 }
 
-console.log(maisSeRepete(arrayTest));
+console.log(somatorio(n));
