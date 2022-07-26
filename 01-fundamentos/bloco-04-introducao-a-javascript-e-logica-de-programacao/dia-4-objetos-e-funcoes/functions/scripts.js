@@ -36,22 +36,44 @@
 // console.log(maiorValor(arrayTest));
 
 //Exercicio 3
-let arrayTest = [2, 4, 6, 7, 10, 0, -3];
+// let arrayTest = [2, 4, 6, 7, 10, 0, -3];
 
-function menorValor(array) {
-    let menor;
+// function menorValor(array) {
+//     let menor;
+
+//     for (let i = 0; i < array.length; i += 1) {
+//         if (i == 0) {
+//             menor = array[i];
+//         } else {
+//             if (array[i] < menor) {
+//                 menor = array[i];
+//             }
+//         }
+        
+//     }
+//     return menor;    
+// }
+
+// console.log(menorValor(arrayTest));
+
+//Exercicio 4
+
+let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function nomeMaior(array) {
+    let maior;
 
     for (let i = 0; i < array.length; i += 1) {
         if (i == 0) {
-            menor = array[i];
+            maior = array[i];
         } else {
-            if (array[i] < menor) {
-                menor = array[i];
+            if (array[i].length > maior.length) {
+                maior = array[i];
             }
         }
-        
     }
-    return menor;    
+
+   return maior; 
 }
 
-console.log(menorValor(arrayTest));
+console.log(nomeMaior(arrayTest));
