@@ -13,3 +13,24 @@ function isPalindromo (string) {
 }
 
 console.log(isPalindromo('reger'));
+
+//Exercicio 2
+let arrayTest = [2, 3, 6, 7, 10, 1];
+
+function maiorValor(array) {
+    let maior;
+
+    for (let i = 0; i < array.length; i += 1) {
+        if (i == 0) {
+            maior = array[i];
+        } else {
+            if (array[i] > maior) {
+                maior = array[i];
+            }
+        }
+        
+    }
+    return maior;    
+}
+
+console.log(maiorValor(arrayTest));
