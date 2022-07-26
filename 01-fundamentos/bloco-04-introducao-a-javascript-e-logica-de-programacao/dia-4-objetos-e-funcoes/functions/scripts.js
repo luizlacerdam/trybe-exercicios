@@ -57,23 +57,55 @@
 // console.log(menorValor(arrayTest));
 
 //Exercicio 4
+// let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
-let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// function nomeMaior(array) {
+//     let maior;
 
-function nomeMaior(array) {
-    let maior;
+//     for (let i = 0; i < array.length; i += 1) {
+//         if (i == 0) {
+//             maior = array[i];
+//         } else {
+//             if (array[i].length > maior.length) {
+//                 maior = array[i];
+//             }
+//         }
+//     }
 
+//    return maior; 
+// }
+
+// console.log(nomeMaior(arrayTest));
+
+//Exercicio 5
+let arrayTest = [2, 3, 2, 5, 8, 2, 3, 3, 6, 8, 3, 8, 8, 8, 8];
+
+function maisSeRepete(array) {
+    let repeticoes = [];
+    let maisSeRepete;
     for (let i = 0; i < array.length; i += 1) {
-        if (i == 0) {
-            maior = array[i];
-        } else {
-            if (array[i].length > maior.length) {
-                maior = array[i];
+        let serepete = 0;
+        for (let n = i; n < array.length; n += 1) {
+            if (array[i] == array[n]) {
+                serepete += 1;
             }
         }
+        repeticoes.push(serepete);
     }
+    
+    let index;
 
-   return maior; 
+    for (let i = 0; i < repeticoes.length; i += 1) {
+        if (i == 0) {
+            index = i;
+        } else {
+            if (repeticoes[i] > repeticoes[i - 1]) {
+                index = i
+            }
+            
+        }
+    }
+    return array[index];
 }
 
-console.log(nomeMaior(arrayTest));
+console.log(maisSeRepete(arrayTest));
