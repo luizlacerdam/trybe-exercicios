@@ -16,3 +16,7 @@ let h3 = document.getElementsByTagName('h3');
 for (let i = 0; i < 2; i += 1) {
    h3[i].style.backgroundColor = 'purple'; 
 }
+//Mudando a cor dos ultimos dois h3
+for (let i = 2; i < 5; i += 1) {
+    h3[i].style.backgroundColor = 'black'; 
+ }
