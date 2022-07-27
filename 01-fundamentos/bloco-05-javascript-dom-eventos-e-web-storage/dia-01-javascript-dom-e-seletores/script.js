@@ -17,6 +17,8 @@ for (let i = 0; i < 2; i += 1) {
    h3[i].style.backgroundColor = 'purple'; 
 }
 //Mudando a cor dos ultimos dois h3
-for (let i = 2; i < 5; i += 1) {
+for (let i = 2; i < 4; i += 1) {
     h3[i].style.backgroundColor = 'black'; 
  }
+//Mudando a cor do footer
+document.getElementById('footer-container').style.backgroundColor = 'black';
