@@ -74,6 +74,14 @@
         return document.getElementsByTagName('h1')[0].innerText = texto;
        }
        corrigirTextoH1('Exercício 5.1 - JavaScript')
+    //Exercicio 5
+       function tagUpper(tag) {
+        let paragrafos = document.getElementsByTagName(tag);
+        for (let i in paragrafos) {
+            paragrafos[i].style.textTransform = 'uppercase';
+        }
+       }
+       tagUpper('p')
     </script>
   </body>
 </html>
