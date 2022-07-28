@@ -8,10 +8,15 @@
 </head>
 <body>
     <main id="paiDoPai">
+        <!--  -->
         <section id="pai">
+            <!--  -->
           <section id="primeiroFilho"></section>
+          <!--  -->
           <section id="elementoOndeVoceEsta">
+            <!--  -->
             <section id="primeiroFilhoDoFilho"></section>
+            <!--  -->
             <section id="segundoEUltimoFilhoDoFilho"></section>
           </section>
           Atenção!
@@ -19,5 +24,17 @@
           <section id="quartoEUltimoFilho"></section>
         </section>
       </main>
+      <script>
+        const pai = document.getElementById('pai');
+        const terceiroFilho = pai.children[2];
+        const quartoEUltimoFilho = pai.children[3];
+        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+        const segundoEUltimoFilhoDoFilho = elementoOndeVoceEsta.lastElementChild;
+
+        elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho);
+        pai.removeChild(terceiroFilho);
+        pai.removeChild(quartoEUltimoFilho);
+
+      </script>
 </body>
 </html>
