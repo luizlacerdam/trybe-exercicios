@@ -55,38 +55,38 @@
  6- Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     //Exercicio 1
-       function mudaParagrafo(index,texto) {
-       document.getElementsByTagName('p')[index].innerText = texto;
-       }
+      function mudaParagrafo(index,texto) {
+        document.getElementsByTagName('p')[index].innerText = texto;
+      }
        mudaParagrafo(1,'Daqui a dois anos me vejo formado na Trybe e em uma carreira promissora como WebDev!!!')
     //Exercicio 2
-       function mudaCorTrybe(color) {
-       return document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
-       }
+      function mudaCorTrybe(color) {
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
+      }
        mudaCorTrybe('rgb(76,164,109)');
     //Exercicio 3
-       function mudaCorQuadrado(color) {
-        return document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
-       }
+      function mudaCorQuadrado(color) {
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
+      }
        mudaCorQuadrado('white');
     //Exercicio 4
-       function corrigirTextoH1(texto) {
-        return document.getElementsByTagName('h1')[0].innerText = texto;
-       }
+      function corrigirTextoH1(texto) {
+        document.getElementsByTagName('h1')[0].innerText = texto;
+      }
        corrigirTextoH1('Exercício 5.1 - JavaScript')
     //Exercicio 5
-       function tagUpper(tag) {
-        let paragrafos = document.getElementsByTagName(tag);
-        for (let i in paragrafos) {
-            paragrafos[i].innerHTML.toUpperCase();
+      function tagUpper(tag) {
+        const paragrafos = document.getElementsByTagName(tag);
+        for (let i = 0; i < paragrafos.length; i += 1) {
+          paragrafos[i].style.textTransform = 'uppercase';
         }
-       }
+      }
        tagUpper('p')
     //Exercicio 6
     function mostrarConsole(tag) {
-        let conteudo = document.getElementsByTagName(tag);
-        for (let i in paragrafos) {
-            console.log(paragrafos[i].style.textTransform = 'uppercase'.innerHTML);
+        const conteudo = document.getElementsByTagName(tag);
+        for (let i = 0; i < conteudo.length; i += 1) {
+          console.log(conteudo[i].innerHTML);
         }
     }
     mostrarConsole('p');
