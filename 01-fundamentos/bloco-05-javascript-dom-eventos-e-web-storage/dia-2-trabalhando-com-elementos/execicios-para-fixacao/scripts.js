@@ -46,7 +46,11 @@ for (let index = 0; index < 3; index++) {
 //Exercicio 10
 h1.classList.add("title");
 //Exercicio 11
-let tags = document.getElementsByTagName('h3');
+const tags = document.getElementsByTagName('h3');
 for (let i = 0; i < 3; i += 1) {
     tags[i].classList.add('description');
 }
+//Exercicio 12
+const mainPai = document.getElementsByClassName('main-content')[0];
+const sectionEsquerda = document.getElementsByClassName('left-content')[0];
+mainPai.removeChild(sectionEsquerda);
