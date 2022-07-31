@@ -38,10 +38,15 @@ for (let index = 1; index <= 10; index++) {
     lista.appendChild(itemLista);
 }
 //Exercicio 9
-for (let index = 0; index <= 3; index++) {
+for (let index = 0; index < 3; index++) {
     let h3 = document.createElement('h3');
     h3.innerText = 'Tag ' + index;
     main.appendChild(h3); 
 }
 //Exercicio 10
 h1.classList.add("title");
+//Exercicio 11
+let tags = document.getElementsByTagName('h3');
+for (let i = 0; i < 3; i += 1) {
+    tags[i].classList.add('description');
+}
