@@ -37,3 +37,9 @@ for (let index = 1; index <= 10; index++) {
     itemLista.innerText = index;
     lista.appendChild(itemLista);
 }
+//Exercicio 9
+for (let index = 0; index <= 3; index++) {
+    let h3 = document.createElement('h3');
+    h3.innerText = 'Tag ' + index;
+    main.appendChild(h3); 
+}
