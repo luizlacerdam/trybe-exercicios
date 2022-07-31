@@ -9,6 +9,11 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 //Por conta de .tech { transform: translateY(-20px);}
+//Por conta da falta da classe tech
+
+// 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+
 secondLi.addEventListener('click',function () {
   secondLi.classList.add('tech');
 });
@@ -16,11 +21,6 @@ secondLi.addEventListener('click',function () {
 thirdLi.addEventListener('click',function () {
   thirdLi.classList.add('tech');
 });
-
-
-
-// 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
