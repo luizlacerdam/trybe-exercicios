@@ -27,5 +27,13 @@ main.appendChild(sectionRight);
 let imagem = document.createElement('img');
 imagem.src = 'https://picsum.photos/200';
 imagem.classList.add('small-image');
-
 sectionLeft.appendChild(imagem);
+//Exercicio 8
+let lista = document.createElement('ul');
+sectionRight.appendChild(lista);
+
+for (let index = 1; index <= 10; index++) {
+    let itemLista = document.createElement('li');
+    itemLista.innerText = index;
+    lista.appendChild(itemLista);
+}
