@@ -11,3 +11,7 @@ body.appendChild(main);
 let section = document.createElement('section');
 section.classList.add('center-content');
 main.appendChild(section);
+//Exercicio 4
+let p = document.createElement('p');
+p.innerText = 'Algum texto';
+section.appendChild(p);
