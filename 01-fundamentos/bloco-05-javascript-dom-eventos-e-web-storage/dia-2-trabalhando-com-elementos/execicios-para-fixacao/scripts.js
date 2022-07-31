@@ -57,3 +57,6 @@ mainPai.removeChild(sectionEsquerda);
 //Exercicio 13
 sectionDireita = document.getElementsByClassName('right-content')[0];
 sectionDireita.style.marginRight = 'auto';
+//Exercicio 14
+const sectionCenter = document.getElementsByClassName('center-content')[0];
+sectionCenter.parentElement.style.backgroundColor = 'green';
