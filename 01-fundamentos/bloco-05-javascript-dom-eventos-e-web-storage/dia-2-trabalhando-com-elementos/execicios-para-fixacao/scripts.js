@@ -15,3 +15,7 @@ main.appendChild(section);
 let p = document.createElement('p');
 p.innerText = 'Algum texto';
 section.appendChild(p);
+//Exercicio 5
+let sectionLeft = document.createElement('section');
+sectionLeft.classList.add('left-content');
+main.appendChild(sectionLeft);
