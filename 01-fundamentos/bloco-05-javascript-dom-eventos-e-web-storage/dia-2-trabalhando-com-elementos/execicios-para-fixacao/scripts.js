@@ -43,3 +43,5 @@ for (let index = 0; index <= 3; index++) {
     h3.innerText = 'Tag ' + index;
     main.appendChild(h3); 
 }
+//Exercicio 10
+h1.classList.add("title");
