@@ -54,3 +54,6 @@ for (let i = 0; i < 3; i += 1) {
 const mainPai = document.getElementsByClassName('main-content')[0];
 const sectionEsquerda = document.getElementsByClassName('left-content')[0];
 mainPai.removeChild(sectionEsquerda);
+//Exercicio 13
+sectionDireita = document.getElementsByClassName('right-content')[0];
+sectionDireita.style.marginRight = 'auto';
