@@ -9,6 +9,13 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 //Por conta de .tech { transform: translateY(-20px);}
+secondLi.addEventListener('click',function () {
+  secondLi.classList.add('tech');
+});
+
+thirdLi.addEventListener('click',function () {
+  thirdLi.classList.add('tech');
+});
 
 
 
