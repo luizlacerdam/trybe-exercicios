@@ -60,3 +60,8 @@ sectionDireita.style.marginRight = 'auto';
 //Exercicio 14
 const sectionCenter = document.getElementsByClassName('center-content')[0];
 sectionCenter.parentElement.style.backgroundColor = 'green';
+//Exercicio 15
+const uls = document.getElementsByTagName('ul')[0];
+for (let i = 0; i < 2; i++) {
+    uls.removeChild(uls.lastElementChild);
+}
