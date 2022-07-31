@@ -4,6 +4,10 @@ let h1 = document.createElement('h1');
 h1.innerText = 'Exercício 5.2 - JavaScript DOM';
 body.appendChild(h1)
 //Exercicio 2
-let tag = document.createElement('main');
-tag.classList.add('main-content');
-body.appendChild(tag);
+let main = document.createElement('main');
+main.classList.add('main-content');
+body.appendChild(main);
+//Exercicio 3
+let section = document.createElement('section');
+section.classList.add('center-content');
+main.appendChild(section);
