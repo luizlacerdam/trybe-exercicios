@@ -126,7 +126,22 @@ function classChange() {
     } else {
       event.target.classList.add('selected');
     }
-    
+
   });
 }
 classChange();
+
+//Exercicio 10
+const dia = document.getElementsByClassName('day');
+function atribuirCor() {
+  dias.addEventListener('click', function (event) {
+    if (event.target.style.backgroundColor == corDiv.style.backgroundColor && event.target.classList[0] == 'day') {
+      event.target.style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+    if (event.target.classList[0] == 'day' && corDiv.classList[1] == 'selected') {
+      event.target.style.backgroundColor = corDiv.style.backgroundColor;
+    }  } 
+  });
+}
+
+atribuirCor();
