@@ -107,3 +107,11 @@ function addTask(string) {
   novaSpan.innerText = string;
   myTasks.appendChild(novaSpan);
 }
+
+//Exercicio 8
+function addDiv(string) {
+  let criarDiv = document.createElement('div');
+  criarDiv.classList.add('task');
+  criarDiv.style.backgroundColor = string;
+  myTasks.appendChild(criarDiv);
+}
