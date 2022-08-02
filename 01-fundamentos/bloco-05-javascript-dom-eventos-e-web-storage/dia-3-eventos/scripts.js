@@ -33,9 +33,9 @@ function criarCalendario(array) {
 criarCalendario(decemberDaysList);
 
 //Exercicio 2
+const divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
 let stringFeriados = 'Feriados';
 function criaButton(string) {
-  const divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
   let button = document.createElement('button');
   button.classList.add('btn-holiday');
   button.innerText = string;
@@ -61,3 +61,12 @@ function holidayColor() {
 }
 holidayColor();
 
+//Exercicio 4
+let sextaFeira = 'Sexta-feira';
+function fridayButton(string) {
+  let fridayButt = document.createElement('button');
+  fridayButt.innerText = string;
+  fridayButt.id = 'btn-friday';
+  divButtonsContainer.appendChild(fridayButt);
+}
+fridayButton(sextaFeira);
