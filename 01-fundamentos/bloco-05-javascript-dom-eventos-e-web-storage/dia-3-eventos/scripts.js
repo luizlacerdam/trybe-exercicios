@@ -159,7 +159,6 @@ function criaTask() {
     let novaTask = document.createElement('li');
     novaTask.innerText = inputTask.value;
     listaTask.appendChild(novaTask);
-    return novaTask;
     }
     
   });
