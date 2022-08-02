@@ -57,16 +57,36 @@ function holidayColor() {
         }
       }
     }
-  })
+  });
 }
 holidayColor();
 
 //Exercicio 4
 let sextaFeira = 'Sexta-feira';
-function fridayButton(string) {
+function criarFridayButton(string) {
   let fridayButt = document.createElement('button');
   fridayButt.innerText = string;
   fridayButt.id = 'btn-friday';
   divButtonsContainer.appendChild(fridayButt);
 }
-fridayButton(sextaFeira);
+criarFridayButton(sextaFeira);
+
+//Exercicio 5
+
+function fridayChange() {
+  const fridayButton = document.getElementById('btn-friday');
+  fridayButton.addEventListener('click', function () {
+    let listas = document.getElementsByClassName('day');
+    for (let i = 0; i < listas.length; i += 1) {
+      if (listas[i].classList[1] == 'friday' || listas[i].classList[2] == 'friday' ) {
+        if (listas[i].innerText != 'Sextoou') {
+          listas[i].innerText = 'Sextoou';
+        } else {
+          listas[i].innerText = i - 1;
+        }
+      }
+    }
+  });
+}
+
+fridayChange();
