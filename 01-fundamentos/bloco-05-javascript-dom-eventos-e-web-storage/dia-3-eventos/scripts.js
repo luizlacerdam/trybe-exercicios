@@ -43,4 +43,21 @@ function criaButton(string) {
 }
 criaButton(stringFeriados);
 
+//Exercicio 3
+function holidayColor() {
+  const buttonHoliday = document.getElementsByClassName('btn-holiday')[0];
+  buttonHoliday.addEventListener('click', function () {
+    let listas = document.getElementsByClassName('day');
+    for (let i = 0; i < listas.length; i += 1) {
+      if (listas[i].classList[1] == 'holiday') {
+        if (listas[i].style.backgroundColor == 'green') {
+          listas[i].style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+          listas[i].style.backgroundColor = 'green';
+        }
+      }
+    }
+  })
+}
+holidayColor();
 
