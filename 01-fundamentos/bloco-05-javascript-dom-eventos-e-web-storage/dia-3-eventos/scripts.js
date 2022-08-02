@@ -15,8 +15,8 @@ createDaysOfTheWeek();
 
 //Exercicio 1
 let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const dias = document.getElementById('days');
 function criarCalendario(array) {
-  const dias = document.getElementById('days');
   for (let i = 0; i < array.length; i += 1) {
     let dia = document.createElement('li');
     dia.classList.add('day');
@@ -72,7 +72,6 @@ function criarFridayButton(string) {
 criarFridayButton(sextaFeira);
 
 //Exercicio 5
-
 function fridayChange() {
   const fridayButton = document.getElementById('btn-friday');
   fridayButton.addEventListener('click', function () {
@@ -88,5 +87,15 @@ function fridayChange() {
     }
   });
 }
-
 fridayChange();
+
+//Exercicio 6
+function zoom() {
+  dias.addEventListener('mouseover', function (event) {
+    event.target.style.fontSize = '25px';
+  });
+  dias.addEventListener('mouseout', function (event) {
+    event.target.style.fontSize = '20px';
+  });
+}
+zoom();
