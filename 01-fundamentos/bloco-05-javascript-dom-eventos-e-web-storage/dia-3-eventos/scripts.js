@@ -99,3 +99,11 @@ function zoom() {
   });
 }
 zoom();
+
+//Exercicio 7
+const myTasks = document.getElementsByClassName('my-tasks')[0];
+function addTask(string) {
+  let novaSpan = document.createElement('span');
+  novaSpan.innerText = string;
+  myTasks.appendChild(novaSpan);
+}
