@@ -107,7 +107,7 @@ function addTask(string) {
   novaSpan.innerText = string;
   myTasks.appendChild(novaSpan);
 }
-
+addTask('Cozinhar');
 //Exercicio 8
 function addDiv(string) {
   let criarDiv = document.createElement('div');
@@ -115,3 +115,18 @@ function addDiv(string) {
   criarDiv.style.backgroundColor = string;
   myTasks.appendChild(criarDiv);
 }
+addDiv('green')
+
+//Exercicio 9
+const corDiv = document.getElementsByClassName('task')[0];
+function classChange() {
+  corDiv.addEventListener('click', function (event) {
+    if (event.target.classList[1] == 'selected') {
+      event.target.classList.remove('selected');
+    } else {
+      event.target.classList.add('selected');
+    }
+    
+  });
+}
+classChange();
