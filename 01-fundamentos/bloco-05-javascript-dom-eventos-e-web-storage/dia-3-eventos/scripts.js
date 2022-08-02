@@ -137,11 +137,33 @@ function atribuirCor() {
   dias.addEventListener('click', function (event) {
     if (event.target.style.backgroundColor == corDiv.style.backgroundColor && event.target.classList[0] == 'day') {
       event.target.style.backgroundColor = 'rgb(238,238,238)';
-    } else {
-    if (event.target.classList[0] == 'day' && corDiv.classList[1] == 'selected') {
-      event.target.style.backgroundColor = corDiv.style.backgroundColor;
-    }  } 
+    } else 
+    {
+      if (event.target.classList[0] == 'day' && corDiv.classList[1] == 'selected') {
+        event.target.style.backgroundColor = corDiv.style.backgroundColor;
+      }  
+    }
   });
 }
-
 atribuirCor();
+
+//bonus
+const butaoAddTask = document.getElementById('btn-add');
+const inputTask = document.getElementById('task-input');
+const listaTask = document.getElementsByClassName('task-list')[0];
+function criaTask() {
+  butaoAddTask.addEventListener('click', function () {
+    let novaTask = document.createElement('li');
+    novaTask.innerText = inputTask.value;
+    listaTask.appendChild(novaTask);
+  });
+
+  inputTask.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+      let novaTask = document.createElement('li');
+    novaTask.innerText = inputTask.value;
+    listaTask.appendChild(novaTask);
+    }
+  });
+}
+criaTask();
