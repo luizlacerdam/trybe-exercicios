@@ -153,17 +153,26 @@ const inputTask = document.getElementById('task-input');
 const listaTask = document.getElementsByClassName('task-list')[0];
 function criaTask() {
   butaoAddTask.addEventListener('click', function () {
+    if (inputTask.value == '') {
+      window.alert('Escreva seu compromisso!!!')
+    } else {
     let novaTask = document.createElement('li');
     novaTask.innerText = inputTask.value;
     listaTask.appendChild(novaTask);
+    return novaTask;
+    }
+    
   });
 
   inputTask.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
-      let novaTask = document.createElement('li');
+    if (inputTask.value == '') {
+      window.alert('Escreva seu compromisso!!!')
+    } else {
+    let novaTask = document.createElement('li');
     novaTask.innerText = inputTask.value;
     listaTask.appendChild(novaTask);
-    }
+    }}
   });
 }
 criaTask();
