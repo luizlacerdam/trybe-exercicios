@@ -4,8 +4,6 @@ Então, você se depara com um anúncio do concurso TrybeTrip, que premia com um
 Concorda que seria uma espécie de formulário?
 O exercício hoje será desenvolver uma página web com o formulário da TrybeTrip. Desenvolva-o em um arquivo chamado form.html. A estruturação de sua página deverá ficar semelhante com a imagem abaixo.
 
-[Como deve ficar](./form.webp)
-
 1. O formulário deverá permitir que a pessoa usuária insira os seguintes campos:
 - Nome Completo:
     - Limitado entre 10 e 40 caracteres.
