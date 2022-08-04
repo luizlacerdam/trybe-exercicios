@@ -18,4 +18,3 @@ O exercício hoje será desenvolver uma página web com o formulário da TrybeTr
 - Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
 2. Crie um botão para enviar as informações preenchidas.
 3. Interrompa o comportamento padrão do botão submit utilizando o método preventDefault(). Nossa amiga Carol Silva nos contou um pouco sobre como fazer isso, lembra?
-4. Crie um botão que limpe as informações contidas nos campos;
