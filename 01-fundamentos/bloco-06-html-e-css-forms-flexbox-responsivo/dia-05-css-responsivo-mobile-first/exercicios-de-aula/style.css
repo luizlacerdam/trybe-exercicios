@@ -9,6 +9,19 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+  div:nth-child(2) {
+    display: block;
+  }
+}
+
+@media not screen and (min-width: 650px) and (max-width: 950px){
+  div:nth-child(3) {
+    display: block;
+  }
+}
+
 body {
   align-items: center;
   color: #525252;
