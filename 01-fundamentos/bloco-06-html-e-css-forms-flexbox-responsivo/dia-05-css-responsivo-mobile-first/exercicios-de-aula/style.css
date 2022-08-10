@@ -1,3 +1,8 @@
+@media screen and (min-width: 500px){
+  div:first-child {
+    display: block;
+  }
+}
 body {
   align-items: center;
   color: #525252;
@@ -65,3 +70,4 @@ p strong {
 .card:nth-of-type(3) {
   background-color: #41197f;
 }
+
