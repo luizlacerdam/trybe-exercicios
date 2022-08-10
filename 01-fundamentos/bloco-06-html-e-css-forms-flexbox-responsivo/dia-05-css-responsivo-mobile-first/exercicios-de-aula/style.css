@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 500px){
+  p.trick {
+    color: black !important;
+  }
+}
+
 body {
   align-items: center;
   color: #525252;
