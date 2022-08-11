@@ -9,6 +9,21 @@
   html {
     background-color: aqua !important;
   }
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  li {
+    font-size: 15px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
 }
 
 html {
