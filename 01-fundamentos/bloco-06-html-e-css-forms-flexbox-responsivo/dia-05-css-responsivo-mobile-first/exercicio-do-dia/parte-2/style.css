@@ -3,9 +3,27 @@
   html {
     background-color: yellow !important;
   }
+  h1 {
+    font-size: 25px !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 17px !important;
+  }
+  li {
+    font-size: 15px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  nav {
+    width: 75% !important;
+  }
 }
 /* Ipad Air */
-@media screen and (max-width: 820px) {
+@media screen and (min-width:390px) and (max-width: 820px) {
   html {
     background-color: aqua !important;
   }
@@ -23,6 +41,9 @@
   }
   p {
     font-size: 15px !important;
+  }
+  nav {
+    width: 50% !important;
   }
 }
 
@@ -62,7 +83,7 @@ header {
   justify-content: space-around;
 }
 nav {
-  width: 15%;
+  width: 25%;
 }
 .ul {
   display: flex;
@@ -76,14 +97,17 @@ footer {
   background-color: #49007e;
   display: flex;
   justify-content: space-around;
+  width: 100%;
+
 }
 
 .footer-p {
   width: 40%;
+  margin: 2%;
 }
 
 article p {
-  width: 75%;
+  
 }
 
 hr {
