@@ -11,3 +11,21 @@ function factorial(n) {
   return `Esse é o fatorial ${result}.`;
 }
 console.log(factorial(5));
+
+// requisito 2
+function longestWord(string) {
+  let palavras = string.split(' ');
+  let maiorPalavra;
+  for (let i = 0; i < palavras.length; i += 1) {
+    if (i == 0) {
+      maiorPalavra = palavras[i];
+    } else {
+      if (palavras[i].length > maiorPalavra.length) {
+        maiorPalavra = palavras[i]
+      }
+    }
+    
+  }
+  return maiorPalavra;
+}
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
