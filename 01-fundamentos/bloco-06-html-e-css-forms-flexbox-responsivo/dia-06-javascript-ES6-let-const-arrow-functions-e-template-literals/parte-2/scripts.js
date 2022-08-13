@@ -43,3 +43,15 @@ function clicks() {
   });
 }
 clicks();
+
+// requisito 4
+  // função 1
+
+  function substituaX(nome) {
+    const frase = 'Tryber x aqui!';
+    let palavras = frase.split(' ');
+    palavras[1] = nome;
+
+    return palavras.join(' ');
+  }
+  console.log(substituaX('Bebeto'));
