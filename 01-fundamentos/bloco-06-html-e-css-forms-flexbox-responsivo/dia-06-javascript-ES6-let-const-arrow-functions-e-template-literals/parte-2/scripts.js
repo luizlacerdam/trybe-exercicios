@@ -29,3 +29,17 @@ function longestWord(string) {
   return maiorPalavra;
 }
 console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+// requisito 3
+
+const BTN_CLICK = document.getElementById('btn-click');
+const CLICKS = document.getElementById('clicks');
+let clickCount = 0;
+
+function clicks() {
+  BTN_CLICK.addEventListener('click', () => {
+    clickCount += 1;
+    CLICKS.innerText = clickCount;
+  });
+}
+clicks();
