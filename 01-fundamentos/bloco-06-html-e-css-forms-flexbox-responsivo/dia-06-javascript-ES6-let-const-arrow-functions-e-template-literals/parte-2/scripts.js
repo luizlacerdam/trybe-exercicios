@@ -2,7 +2,7 @@
 function factorial(n) {
   let num = [];
   let result = 1;
-  for(let i = 1; i <= n; i += 1) {
+  for (let i = 1; i <= n; i += 1) {
     num.push(i)
   }
   for (let h = 0; h < num.length; h += 1) {
@@ -24,7 +24,7 @@ function longestWord(string) {
         maiorPalavra = palavras[i]
       }
     }
-    
+
   }
   return maiorPalavra;
 }
@@ -45,13 +45,22 @@ function clicks() {
 clicks();
 
 // requisito 4
-  // função 1
+// função 1
 
-  function substituaX(nome) {
-    const frase = 'Tryber x aqui!';
-    let palavras = frase.split(' ');
-    palavras[1] = nome;
+function substituaX(nome) {
+  const frase = 'Tryber x aqui!';
+  let palavras = frase.split(' ');
+  palavras[1] = nome;
 
-    return palavras.join(' ');
-  }
-  console.log(substituaX('Bebeto'));
+  return palavras.join(' ');
+}
+
+// função 2
+
+function minhasSkills(retorno) {
+  const skill = ['HTML', 'JS', 'CSS'];
+
+  return `${retorno}\nMinhas três principais habilidades são:\n- ${skill[0]}\n- ${skill[1]}\n- ${skill[2]}
+  `;
+}
+console.log(minhasSkills(substituaX('Bebeto')));
