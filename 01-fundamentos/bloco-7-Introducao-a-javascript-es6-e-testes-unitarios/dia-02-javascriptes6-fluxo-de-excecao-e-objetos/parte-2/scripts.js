@@ -42,8 +42,10 @@ const customerInfo = (order) => {
 console.log(customerInfo(order));
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  order.name = 'Luiz Silva';
+  order.payment.total = 50;
+  return `Olá ${order.name}, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ ${order.payment.total}.`;
 
 }
 
-orderModifier(order);
+console.log(orderModifier(order));
