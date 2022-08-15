@@ -34,5 +34,10 @@ listarChaves(lesson2);
 function tamanhoObjeto(objeto) {
   return Object.keys(objeto).length;
 }
-console.log(tamanhoObjeto(lesson1));
+tamanhoObjeto(lesson1);
 
+// requisito 4
+function listaValores(objeto) {
+  return Object.values(objeto);
+}
+listaValores(lesson3);
