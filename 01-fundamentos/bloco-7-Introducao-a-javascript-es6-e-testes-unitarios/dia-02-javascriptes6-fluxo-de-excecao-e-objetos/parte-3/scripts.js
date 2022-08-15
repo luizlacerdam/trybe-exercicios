@@ -23,4 +23,7 @@ function adicionaTurno(objeto, chave, valor) {
 }
 adicionaTurno(lesson2,'turno','noite');
 
-console.log(lesson2);
+function listarChaves(objeto) {
+  return Object.keys(objeto);
+}
+console.log(listarChaves(lesson2));
