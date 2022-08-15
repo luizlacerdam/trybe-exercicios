@@ -18,12 +18,21 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// requisito 1
 function adicionaTurno(objeto, chave, valor) {
   objeto[chave] = valor
 }
 adicionaTurno(lesson2,'turno','noite');
 
+// requisito 2
 function listarChaves(objeto) {
   return Object.keys(objeto);
 }
-console.log(listarChaves(lesson2));
+listarChaves(lesson2);
+
+// requisito 3
+function tamanhoObjeto(objeto) {
+  return Object.keys(objeto).length;
+}
+console.log(tamanhoObjeto(lesson1));
+
