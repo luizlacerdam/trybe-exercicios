@@ -17,3 +17,10 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+function adicionaTurno(objeto, chave, valor) {
+  objeto[chave] = valor
+}
+adicionaTurno(lesson2,'turno','noite');
+
+console.log(lesson2);
