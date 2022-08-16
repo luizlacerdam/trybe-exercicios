@@ -46,3 +46,12 @@ adicionaTurno(lesson2,'turno','noite');
 const allLessons = {lesson1, lesson2, lesson3}
 
 console.log(allLessons);
+
+// requisito 6
+
+function soma(classe1, classe2, classe3) {
+  return classe1.numeroEstudantes + classe2.numeroEstudantes + classe3.numeroEstudantes;
+
+}
+
+console.log(soma(lesson1, lesson2, lesson3))
