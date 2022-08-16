@@ -1,3 +1,9 @@
+@media print and (min-width: 100px) {
+  body {
+    background-color: #383;
+  }
+  
+}
 body {
   margin: 0;
 }
