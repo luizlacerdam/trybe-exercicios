@@ -24,20 +24,25 @@ function adicionaTurno(objeto, chave, valor) {
 }
 adicionaTurno(lesson2,'turno','noite');
 
-// requisito 2
-function listarChaves(objeto) {
-  return Object.keys(objeto);
-}
-listarChaves(lesson2);
+// // requisito 2
+// function listarChaves(objeto) {
+//   return Object.keys(objeto);
+// }
+// listarChaves(lesson2);
 
-// requisito 3
-function tamanhoObjeto(objeto) {
-  return Object.keys(objeto).length;
-}
-tamanhoObjeto(lesson1);
+// // requisito 3
+// function tamanhoObjeto(objeto) {
+//   return Object.keys(objeto).length;
+// }
+// tamanhoObjeto(lesson1);
 
-// requisito 4
-function listaValores(objeto) {
-  return Object.values(objeto);
-}
-listaValores(lesson3);
+// // requisito 4
+// function listaValores(objeto) {
+//   return Object.values(objeto);
+// }
+// listaValores(lesson3);
+
+// requisito 5
+const allLessons = {lesson1, lesson2, lesson3}
+
+console.log(allLessons);
