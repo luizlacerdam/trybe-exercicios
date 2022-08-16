@@ -18,11 +18,11 @@ const lesson3 = {
   turno: 'noite',
 };
 
-// requisito 1
-function adicionaTurno(objeto, chave, valor) {
-  objeto[chave] = valor
-}
-adicionaTurno(lesson2,'turno','noite');
+// // requisito 1
+// function adicionaTurno(objeto, chave, valor) {
+//   objeto[chave] = valor
+// }
+// adicionaTurno(lesson2,'turno','noite');
 
 // // requisito 2
 // function listarChaves(objeto) {
@@ -58,9 +58,24 @@ adicionaTurno(lesson2,'turno','noite');
 
 // requisito 7
 
-function keyValue(lesson, index) {
-  let arrayOf = Object.values(lesson);
-  return arrayOf[index];
-}
+// function keyValue(lesson, index) {
+//   let arrayOf = Object.values(lesson);
+//   return arrayOf[index];
+// }
 
-console.log(keyValue(lesson1,0));
+// console.log(keyValue(lesson1,0));
+
+// requisito 8
+function verifyPair(lesson, chave, valor) {
+  const arr = Object.entries(lesson);
+  let isEqual = false;
+
+  for (let index in arr) {
+    if (arr[index][0] === chave && arr[index][1] === valor) {
+      isEqual = true
+    }
+  }
+  return isEqual;
+}
+console.log(verifyPair(lesson3,'turno','noite'));
+
