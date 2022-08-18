@@ -30,3 +30,16 @@ describe('Testa valores da função myRemove', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });
+
+const myFizzBuzz = require('./myFizzBuzz');
+
+// requisito 3
+describe('Testa valores da função myFizzBuzz', () => {
+  test('verifica se de acordo com o parametro recebido, retorna o valor esperado',() => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    expect(myFizzBuzz(3)).toBe('fizz');
+    expect(myFizzBuzz(5)).toBe('buzz');
+    expect(myFizzBuzz(7)).toBe(7);
+    expect(myFizzBuzz('15')).toBe(false);
+  });
+});
