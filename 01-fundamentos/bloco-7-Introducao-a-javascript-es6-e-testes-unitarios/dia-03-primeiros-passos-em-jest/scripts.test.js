@@ -43,3 +43,32 @@ describe('Testa valores da função myFizzBuzz', () => {
     expect(myFizzBuzz('15')).toBe(false);
   });
 });
+
+// requisito 4
+
+const { encode, decode } = require('./encodeDecode.js');
+
+describe('Testa a função encode e decode', () => {
+  test('decode e encode são funções?',() => {
+    expect(typeof encode).toBe('function');
+    expect(typeof decode).toBe('function');
+  });
+  test('verifica na função encode se as voagais aeiou retornam 12345',() => {
+    expect(encode('aeiou')).toBe('12345');
+  });
+  test('verifica na função decode se os numeros 12345 retornam as vogais aeiou',() => {
+    expect(decode('12345')).toBe('aeiou');
+  });
+  test('verifica se encode 67890 retornam 67890 ',() => {
+    expect(encode('67890')).toBe('67890');
+  });
+  test('verifica se decode 67890 retornam 67890 ',() => {
+    expect(decode('67890')).toBe('67890');
+  });
+  test('verifica se a string retorna o mesmo numero de caracteres em encode',() => {
+    expect(encode('trybe').length).toBe(5);
+  });
+  test('verifica se a string retorna o mesmo numero de caracteres em decode',() => {
+    expect(encode('tryb2').length).toBe(5);
+  });
+});
