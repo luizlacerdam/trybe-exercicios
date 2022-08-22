@@ -26,3 +26,12 @@ const objeto = (nome) => {
 }
 
 console.log(newEmployees());
+
+// exercicio 2
+const numberChecker = (aposta, numeroSorteado) => aposta === numeroSorteado;
+const sorteio = (aposta, callback) => {
+ const numeroSorteado = Math.floor(Math.random() * 5) + 1;
+ return callback(aposta, numeroSorteado)?'Parabéns, você ganhou!' : 'Tente outra vez..';
+}
+
+console.log(sorteio(3,numberChecker));
