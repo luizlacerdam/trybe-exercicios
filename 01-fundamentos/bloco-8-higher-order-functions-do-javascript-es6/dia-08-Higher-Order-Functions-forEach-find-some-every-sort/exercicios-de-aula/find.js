@@ -12,11 +12,12 @@ console.log(findDivisibleBy3And5(numbers))
 // 2 - Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
 const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
-const findNameWithFiveLetters = () => {
+const findNameWithFiveLetters = (array) => {
   // Adicione seu código aqui:
+  return array.find((nome) => nome.length === 5);
 }
 
-console.log(findNameWithFiveLetters());
+console.log(findNameWithFiveLetters(names));
 
 // 3 - Utilize o find para encontrar a música com id igual a 31031685, caso ela exista:
 const musicas = [
