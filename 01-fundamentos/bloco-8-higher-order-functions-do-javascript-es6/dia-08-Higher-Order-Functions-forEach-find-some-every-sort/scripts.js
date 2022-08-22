@@ -110,4 +110,11 @@ function someBookWasReleaseOnThe80s(arr) {
   // escreva seu código aqui
   return arr.some((element) => element.releaseYear >= 1980 && element.releaseYear < 1990);
 }
-console.log(someBookWasReleaseOnThe80s(books));
+//console.log(someBookWasReleaseOnThe80s(books));
+
+// requsito 7
+function authorUnique(arr) {
+  // escreva seu código aqui
+  return arr.every((book) => !arr.some((element) => (element.author.birthYear === book.author.birthYear) && (element.author.name !== book.author.name)));
+}
+console.log(authorUnique(books));
