@@ -8,6 +8,6 @@ const breakfast = () => 'Bora tomar café!!';
 const goSleep = () => 'Partiu dormir!!';
 
 // requisito 4
-const doingThings = (param) => console.log(param);
+const doingThings = (callback) => console.log(callback());
 
-doingThings(goSleep());
+doingThings(goSleep);
