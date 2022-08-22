@@ -81,3 +81,9 @@ function smallerName(array) {
   return nameBook;
 }
 console.log(smallerName(books));
+
+function getNamedBook(array) {
+  // escreva seu código aqui
+  return array.find((element) => element.name.length === 26);
+}
+console.log(getNamedBook(books));
