@@ -35,3 +35,19 @@ const sorteio = (aposta, callback) => {
 }
 
 console.log(sorteio(3,numberChecker));
+
+// exercicio 3
+const prova = (gabarito, respostas, callback) => {
+callback(gabarito,respostas);
+}
+const correcao = (gabarito, respostas) => {
+  let pontos = 0;
+  for (let i = 0; i < gabarito.length; i += 1) {
+    (respostas[i] === gabarito[i])?pontos += 1 : (respostas[i] === 'N.A')?pontos -= 0.5 : pontos = pontos;
+  }
+  return pontos;
+}
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
