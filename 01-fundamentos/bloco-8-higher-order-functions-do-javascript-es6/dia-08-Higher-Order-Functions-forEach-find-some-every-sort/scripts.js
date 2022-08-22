@@ -60,10 +60,24 @@ const books = [
     releaseYear: 1928,
   },
 ];
-
+// requisito 1
 // Adicione o código do exercício aqui:
 function authorBornIn1947(array) {
   // escreva aqui o seu código
   return array.find((livro) => livro.author.birthYear === 1947).author.name;
 }
-console.log(authorBornIn1947(books));
+//console.log(authorBornIn1947(books));
+
+// requisito 2
+function smallerName(array) {
+  let nameBook = '';
+  // escreva aqui o seu código
+  array.forEach(element => {
+    if (element.name.length > nameBook.length) {
+      nameBook = element.name;
+    }
+  });
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+console.log(smallerName(books));
