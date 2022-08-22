@@ -82,8 +82,17 @@ function smallerName(array) {
 }
 console.log(smallerName(books));
 
+// requisito 3
 function getNamedBook(array) {
   // escreva seu código aqui
   return array.find((element) => element.name.length === 26);
 }
 console.log(getNamedBook(books));
+
+// requisito 4
+function booksOrderedByReleaseYearDesc(arr) {
+  // escreva aqui seu código
+  arr.sort((a, b) => a.releaseYear - b.releaseYear);
+}
+booksOrderedByReleaseYearDesc(books);
+console.log(books);
