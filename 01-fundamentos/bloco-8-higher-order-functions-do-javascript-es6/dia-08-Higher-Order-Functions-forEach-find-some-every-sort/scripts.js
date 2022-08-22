@@ -103,4 +103,11 @@ function everyoneWasBornOnSecXX(arr) {
   return arr.every((element) => element.author.birthYear >= 1900 && element.author.birthYear < 2000);
 
 }
-console.log(everyoneWasBornOnSecXX(books));
+//console.log(everyoneWasBornOnSecXX(books));
+
+// requisito 6
+function someBookWasReleaseOnThe80s(arr) {
+  // escreva seu código aqui
+  return arr.some((element) => element.releaseYear >= 1980 && element.releaseYear < 1990);
+}
+console.log(someBookWasReleaseOnThe80s(books));
