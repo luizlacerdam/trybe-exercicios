@@ -78,8 +78,11 @@ const fcFantasy = books.filter((book) => book.genre === 'Ficção Científica' |
 //console.log(fcFantasy);
 
 // requisito 4
-
 const moreThan60YearsOld = books.filter((book) => (2022 - book.releaseYear) > 60);
 
-console.log(moreThan60YearsOld.sort((a,b) => a.releaseYear - b.releaseYear));
+//console.log(moreThan60YearsOld.sort((a,b) => a.releaseYear - b.releaseYear));
 
+// requisito 5
+const autoresDeFic = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+
+//console.log(autoresDeFic.map((e) => e.author.name));
