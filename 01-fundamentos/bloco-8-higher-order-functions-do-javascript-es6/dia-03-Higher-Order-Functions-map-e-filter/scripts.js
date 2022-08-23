@@ -86,3 +86,7 @@ const moreThan60YearsOld = books.filter((book) => (2022 - book.releaseYear) > 60
 const autoresDeFic = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 
 //console.log(autoresDeFic.map((e) => e.author.name));
+
+// requisto 6
+//console.log(moreThan60YearsOld.map((e) => e.name));
+
