@@ -90,3 +90,8 @@ const autoresDeFic = books.filter((book) => book.genre === 'Ficção Científica
 // requisto 6
 //console.log(moreThan60YearsOld.map((e) => e.name));
 
+// requisito 7
+const authorNames = books.find((book) => (book.author.name.split(' ').filter((palavra) => palavra.endsWith('.')).length === 3)).name;
+
+
+console.log(authorNames);
