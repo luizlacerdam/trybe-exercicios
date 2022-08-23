@@ -63,4 +63,12 @@ const books = [
 
 // requisito 1
 
-console.log(books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}` ));
+//console.log(books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`));
+
+// requisito 2
+let novoObj = books.map((livro) => ({
+  age: livro.releaseYear - livro.author.birthYear, 
+  author: livro.name,
+})
+);
+console.log(novoObj.sort((a,b) => a.age - b.age));
