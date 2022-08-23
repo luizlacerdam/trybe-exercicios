@@ -66,9 +66,14 @@ const books = [
 //console.log(books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`));
 
 // requisito 2
-let novoObj = books.map((livro) => ({
+const novoObj = books.map((livro) => ({
   age: livro.releaseYear - livro.author.birthYear, 
   author: livro.name,
 })
 );
-console.log(novoObj.sort((a,b) => a.age - b.age));
+//console.log(novoObj.sort((a,b) => a.age - b.age));
+
+// requisito 3
+const fcFantasy = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+console.log(fcFantasy);
+
