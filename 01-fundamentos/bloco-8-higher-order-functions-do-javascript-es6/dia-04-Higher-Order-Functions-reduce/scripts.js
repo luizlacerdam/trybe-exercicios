@@ -113,4 +113,22 @@ function averageAge(arr) {
 function longestNamedBook(arr) {
   return arr.reduce((acc, curr) => (acc.name.length > curr.name.length) ? acc : curr);
 }
-console.log(longestNamedBook(books));
+// console.log(longestNamedBook(books));
+
+// requisito 5
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+function containsA(arr) {
+  return arr.reduce((acc, curr) => acc + curr.split('').reduce((acumulador, letra) => {
+    if (letra === 'a' || letra === 'A') {
+      return acumulador + 1;
+    }
+    return acumulador
+  }, 0), 0);
+}
+
+console.log(containsA(names));
