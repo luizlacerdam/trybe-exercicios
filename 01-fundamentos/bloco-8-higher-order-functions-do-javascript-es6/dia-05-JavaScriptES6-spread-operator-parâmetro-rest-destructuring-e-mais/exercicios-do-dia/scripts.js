@@ -1,3 +1,4 @@
+// Objct
 // requisito 1
 // Faça uma lista com as suas frutas favoritas
 const specialFruit = ['banana', 'mamao', 'laranja'];
@@ -32,4 +33,17 @@ const {
   squad,
   squadInitials,
 } = bothObj;
-console.log(`Hi, my name is ${fname}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
+//console.log(`Hi, my name is ${fname}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
+
+////////////////
+// Array////////
+////////////////
+
+// requisito 1
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+
+//saudacoes[1](saudacoes[0]); // Olá
+
+// Produza o mesmo resultado acima, porém utilizando array destructuring
+const [ola, saudacao] = saudacoes;
+saudacao(ola);
