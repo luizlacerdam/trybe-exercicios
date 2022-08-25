@@ -11,7 +11,7 @@ const fruitSalad = (fruit, additional) => [...fruit, ...additional];
 
 // requisito 2
 const user = {
-  name: 'Maria',
+  fname: 'Maria',
   age: 21,
   nationality: 'Brazilian',
 };
@@ -23,4 +23,13 @@ const jobInfos = {
 };
 
 const bothObj = {...user, ...jobInfos};
-console.log(bothObj);
+// console.log(bothObj);
+const {
+  fname,
+  age,
+  nationality,
+  profession,
+  squad,
+  squadInitials,
+} = bothObj;
+console.log(`Hi, my name is ${fname}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
