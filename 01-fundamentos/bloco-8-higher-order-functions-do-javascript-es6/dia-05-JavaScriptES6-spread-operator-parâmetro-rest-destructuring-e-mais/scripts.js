@@ -74,4 +74,10 @@ const people = [
 // escreva filterPeople abaixo
 
 const filterPeople = (arr) => arr.filter((element) => element.bornIn < 2000 && element.nationality === 'Australian');
-console.log(filterPeople(people));
+//console.log(filterPeople(people));
+
+// requisito 5
+const myList = [5, 2, 3];
+const swap = ([a, b, c]) => [c, b, a];
+//console.log(swap(myList)); 
+// escreva swap abaixo
