@@ -80,4 +80,16 @@ const filterPeople = (arr) => arr.filter((element) => element.bornIn < 2000 && e
 const myList = [5, 2, 3];
 const swap = ([a, b, c]) => [c, b, a];
 //console.log(swap(myList)); 
-// escreva swap abaixo
+
+// requisito 6
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+const toObject = ([marca, modelo, ano]) => ({
+  marca,
+  modelo,
+  ano,
+});
+console.log(toObject(palio));
