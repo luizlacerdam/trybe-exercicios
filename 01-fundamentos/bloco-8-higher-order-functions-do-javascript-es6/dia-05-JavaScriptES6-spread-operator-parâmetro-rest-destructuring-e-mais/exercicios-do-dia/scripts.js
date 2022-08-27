@@ -35,9 +35,9 @@ const {
 } = bothObj;
 //console.log(`Hi, my name is ${fname}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
 
-////////////////
-// Array////////
-////////////////
+/////////////////
+//Array Destruc//
+/////////////////
 
 // requisito 1
 const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
@@ -53,8 +53,26 @@ let comida = 'gato';
 let animal = 'água';
 let bebida = 'arroz';
 
-//console.log(comida, animal, bebida); // arroz gato água
+// console.log(comida, animal, bebida); // arroz gato água
 
 // Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
 [comida, animal, bebida] = [bebida, comida, animal];
 // console.log(comida, animal, bebida);
+
+// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
+
+const getNationality = ({ firstName, nationality = 'Brazillian' }) => `${firstName} is ${nationality}`;
+
+const person = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
+
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality: 'Russian',
+};
+
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
