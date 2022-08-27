@@ -61,18 +61,25 @@ let bebida = 'arroz';
 
 // Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
 
-const getNationality = ({ firstName, nationality = 'Brazillian' }) => `${firstName} is ${nationality}`;
+// const getNationality = ({ firstName, nationality = 'Brazillian' }) => `${firstName} is ${nationality}`;
 
-const person = {
-  firstName: 'João',
-  lastName: 'Jr II',
-};
+// const person = {
+//   firstName: 'João',
+//   lastName: 'Jr II',
+// };
 
-const otherPerson = {
-  firstName: 'Ivan',
-  lastName: 'Ivanovich',
-  nationality: 'Russian',
-};
+// const otherPerson = {
+//   firstName: 'Ivan',
+//   lastName: 'Ivanovich',
+//   nationality: 'Russian',
+// };
 
-console.log(getNationality(otherPerson)); // Ivan is Russian
-console.log(getNationality(person));
+// console.log(getNationality(otherPerson)); // Ivan is Russian
+// console.log(getNationality(person));
+
+const getPosition = (latitude, longitude) => ({
+  latitude,
+  longitude,
+});
+
+console.log(getPosition(-19.8157, -43.9542));
