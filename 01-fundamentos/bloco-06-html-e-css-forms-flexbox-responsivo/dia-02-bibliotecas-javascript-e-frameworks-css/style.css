@@ -1,0 +1,19 @@
+* {
+    margin: 5px;
+}
+
+#form-nome, #form-email {
+    display: inline-block;
+}
+
+.label {
+    display: inline-block;
+}
+
+#n1, #n2 {
+    display: inline-block;
+}
+
+button {
+    border-radius: 5px;
+}

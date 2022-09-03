@@ -1,0 +1,54 @@
+h1 {
+    /* border: solid 1px; */
+    text-align: center;
+}
+
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+}
+
+.second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+ul:first-child li:first-child{
+    display: block;
+    margin: auto;
+}
+
+ul:first-child li:nth-child(2){
+    display: inline-block;
+}
+
+ul:first-child li:nth-child(3){
+    display: inline-block;
+}
+/* centralizou */
+body {
+    text-align: center;
+}
+
+.lado-a-lado {
+    /* border: solid 1px; */
+    display: inline-flex;
+    list-style: none;
+    margin: 0px;
+
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<header>
+  <h1>Header da página</h1>
+</header>
+
+<body>
+  <main>
+    <form action="#">
+      <section id="form-nome">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" min="10" max="40">
+      </section>
+      <section id="form-email">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" min="10" max="50">
+      </section>
+      <section id="form-destino">
+        <fieldset>
+          <legend>Destino Preferido:</legend>
+        <input type="radio" name="destino" id="destino-1">
+        <label for="destino-1">Cidade</label>
+        <input type="radio" name="destino" id="destino-2">
+        <label for="destino-2">Campo</label>
+        <input type="radio" name="destino" id="destino-3">
+        <label for="destino-3">Praia</label>
+        <input type="radio" name="destino" id="destino-4">
+        <label for="destino-4">Montanhas</label>
+        </fieldset>
+      </section>
+      <section id="form-text-area">
+        <fieldset>
+          <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+          <textarea name="textarea" id="text-area" cols="30" rows="10" maxlength="500"></textarea>
+        </fieldset>
+      </section>
+      <section id="form-date">
+        <fieldset>
+          <legend>Qual a melhor data para realizar sua viagem?</legend>
+          <label for="date">Data: </label>
+        <input type="date" name="date" id="date">
+        </fieldset>
+      </section>
+      <section id="form-agree-1">       
+        <input type="checkbox" name="n1" id="n1">
+        <label for="n1" class="label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </section>
+      <section id="form-agree-2">
+        <input type="checkbox" name="n2" id="n2">
+        <label for="n1" class="label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </section>
+      <section id="buttons">
+        <button type="submit" id="enviar">Enviar</button>
+        <button id="apagar">Apagar</button>
+      </section>
+    </form>
+  </main>
+</body>
+
+</html>
