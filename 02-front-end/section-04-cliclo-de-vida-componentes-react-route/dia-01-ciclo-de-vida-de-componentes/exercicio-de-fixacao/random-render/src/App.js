@@ -6,6 +6,7 @@ class App extends React.Component {
     super();
     this.state = {
       storage: [],
+      load: false,
     }
   }
   fetchPerson = async () => {
@@ -14,6 +15,7 @@ class App extends React.Component {
     const result = await request.json();
     this.setState(() => ({
       storage: [result],
+      load: true,
     }));
   }
 
@@ -22,12 +24,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { storage } = this.state;
-    console.log(storage);
+    const { storage, load } = this.state;
     return (
       <>
-      <h1>RANDOM PERSON</h1>
-      
+        
       </>
     );
   }
