@@ -18,7 +18,7 @@ class App extends React.Component{
       <form>
         <label>
           Qual seu nome??
-          <input name='nome' type="text" value={ this.state.nome } onChange={ this.handleChange }/>
+          <input name='nome' type="text" value={ this.state.nome } onChange={ this.handleChange } style={ { display: 'none' } }/>
         </label>
         <label>
           Deseja compartilha seu nome?
