@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import About from './components/About';
 import Home from './components/Home';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
       </BrowserRouter>
     );
   }
