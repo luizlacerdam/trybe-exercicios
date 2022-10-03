@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 class StrictAcess extends Component {
   render() {
     const { username, password } = this.props.user;
-    if (!(username === 'joao' && password === '123')) {
+    if (!(username === 'joao' && password === '1234')) {
       window.alert('Access denied')
       return <Redirect to="/" />
     }
