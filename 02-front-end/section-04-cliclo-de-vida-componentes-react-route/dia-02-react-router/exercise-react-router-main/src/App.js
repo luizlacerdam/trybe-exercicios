@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <switch>
-        <Route path="/users/:id" render={ (props) => <Users { ...props } greetingsMessage="Good Morning"/> } />
+        <Route path="/users/:id" render={ (props) => <Users { ...props } user={ { username: 'joao', senha: '1234' } } greetingsMessage="Good Morning"/> } />
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
       </switch>
