@@ -18,8 +18,13 @@ const renderWithRedux = (
   store,
 });
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('testing clicks', () => {
+  beforeEach(cleanup);
+  test('the page should have a button and a text 0', () => {
+    renderWithRedux(<App />);
+    const buttonAdicionar = screen.queryByText('Clique aqui');
+
+    expect(buttonAdicionar).toBeInTheDocument();
+    expect(screen.getByText('0')).toBeInTheDocument();
+  });
 });
