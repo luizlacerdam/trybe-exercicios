@@ -6,6 +6,7 @@ import App from './App';
 // src/App.test.js
 import {  combineReducers, legacy_createStore } from 'redux';
 import clickReducer from './reducers';
+import userEvent from '@testing-library/user-event';
 
 const renderWithRedux = (
   component,
@@ -32,4 +33,11 @@ describe('testing clicks', () => {
 
     expect(screen.getByText('5')).toBeInTheDocument();
   });
+  test('the page should have 1 after a click on the button', () => {
+    renderWithRedux(<App />);
+    const buttonAdicionar = screen.queryByText('Clique aqui');
+    expect(screen.getByText('0')).toBeInTheDocument();
+    userEvent.click(buttonAdicionar)
+    expect(screen.getByText('1')).toBeInTheDocument();
+  })
 });
