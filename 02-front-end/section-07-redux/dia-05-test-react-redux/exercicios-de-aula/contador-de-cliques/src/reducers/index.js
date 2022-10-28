@@ -1,4 +1,3 @@
-// src/reducers/index.js
 const INITIAL_STATE = {
     counter: 0,
   };
