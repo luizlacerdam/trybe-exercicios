@@ -39,5 +39,12 @@ describe('testing clicks', () => {
     expect(screen.getByText('0')).toBeInTheDocument();
     userEvent.click(buttonAdicionar)
     expect(screen.getByText('1')).toBeInTheDocument();
-  })
+  });
+  test('the page starts with clicks count 10 and test if count another', () => {
+    renderWithRedux(<App />, { initialState: { clickReducer: { counter: 10 } } });
+    const buttonAdicionar = screen.queryByText('Clique aqui');
+    expect(screen.getByText('10')).toBeInTheDocument();
+    userEvent.click(buttonAdicionar)
+    expect(screen.getByText('11')).toBeInTheDocument();
+  });
 });
