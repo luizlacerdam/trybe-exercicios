@@ -27,4 +27,9 @@ describe('testing clicks', () => {
     expect(buttonAdicionar).toBeInTheDocument();
     expect(screen.getByText('0')).toBeInTheDocument();
   });
+  test('a click in a button should increment the value of clicks', () => {
+    renderWithRedux(<App />, { initialState: { clickReducer: { counter: 5 } } });
+
+    expect(screen.getByText('5')).toBeInTheDocument();
+  });
 });
