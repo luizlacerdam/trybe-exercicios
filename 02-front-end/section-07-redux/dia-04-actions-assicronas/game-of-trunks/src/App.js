@@ -5,31 +5,41 @@ import { connect } from 'react-redux';
 
 class App extends React.Component {
   state = {
-    search: '',
+    searchInput: '',
   }
   componentDidMount() {
-    const { dispatch } = this.props;
+    // const { dispatch } = this.props;
 
-    dispatch(fetchGot('Jon Snow'))
+    // dispatch(fetchGot('Jon Snow'))
 
   }
+
+  handleInput = (event) => {
+    const {value} = event.target;
+    this.setState({
+      searchInput: value,
+    })
+  }
   render() {
-    const { name, dispatch } = this.props
+    const { name, dispatch, culture } = this.props
+    const {searchInput} = this.state;
     
     return (
     <div className="App">
 
       <label htmlFor="search-field">
-        <input id="search-field" type="text" />
+        <input id="search-field" type="text" onChange={ this.handleInput } value={searchInput}/>
       </label>
-      <button onClick={() => {}} type='button'>Procurar</button>
+      <button onClick={() => dispatch(fetchGot(searchInput))} type='button'>Procurar</button>
       <p>{name}</p>
+      <p>{culture}</p>
     </div>
   )}
 }
 
 const mapStateToProps = (state) => ({
   name: state.data.name,
+  culture: state.data.culture,
 })
 
 export default connect(mapStateToProps)(App);
