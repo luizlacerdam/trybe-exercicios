@@ -1,5 +1,5 @@
 const INIT_STATE = {
-    data: {name: '',
+    data: {name: 'Valar',
     culture: '',
     born: '',
     titles:[''],

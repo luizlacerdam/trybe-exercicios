@@ -9,7 +9,7 @@ function requestData() {
 function getData(json) {
     return {
         type: GET_DATA, 
-        payload: json.message,
+        payload: json[0],
     }
 }
 
