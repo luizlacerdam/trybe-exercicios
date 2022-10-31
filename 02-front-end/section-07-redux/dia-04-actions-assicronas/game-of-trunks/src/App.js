@@ -21,9 +21,8 @@ class App extends React.Component {
     })
   }
   render() {
-    const { name, dispatch, culture } = this.props
+    const { name, dispatch, culture, isLoading } = this.props
     const {searchInput} = this.state;
-    
     return (
     <div className="App">
 
@@ -31,8 +30,12 @@ class App extends React.Component {
         <input id="search-field" type="text" onChange={ this.handleInput } value={searchInput}/>
       </label>
       <button onClick={() => dispatch(fetchGot(searchInput))} type='button'>Procurar</button>
-      <p>{name}</p>
-      <p>{culture}</p>
+      {isLoading ? <p>Loading...</p> : (
+      <div>
+        <p>{name}</p>
+        <p>{culture}</p>
+      </div>)
+      }
     </div>
   )}
 }
