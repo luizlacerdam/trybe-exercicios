@@ -1,37 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Form() {
+    const [name, setName] = useState('');
+    const [age, setAge] = useState('');
+    const [city, setCity] = useState('');
+    
+
     return(
         <form>
             <label htmlFor="name">
                 Full Name
-                <input id="name" type="text" />
+                <input value={name} onChange={({target}) => setName(target.value)} id="name" type="text" />
             </label>
             <br />
             <label htmlFor="age">
                 Age
-                <input id="age" type="number" />
+                <input value={age} onChange={({target}) => setAge(target.value)} id="age" type="number" />
             </label>
             <br />
             <label htmlFor="city">
                 City
-                <input id="city" type="text" />
-            </label>
-            <label htmlFor="fund">
-                Fund
-                <input type="radio" name="" id="fund" />
-            </label>
-            <label htmlFor="FrontEnd">
-                FrontEnd
-                <input type="radio" name="" id="FrontEnd" />
-            </label>
-            <label htmlFor="BackEnd">
-                BackEnd
-                <input type="radio" name="" id="BackEnd" />
-            </label>
-            <label htmlFor="SC">
-                SC
-                <input type="radio" name="" id="SC" />
+                <input value={city} onChange={({target}) => setCity(target.value)} id="city" type="text" />
             </label>
             <button type="button">Send</button>
         </form>
