@@ -1,16 +1,20 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Menssages from './components/Menssages';
 import SelectAll from './components/SelectAll';
 import Header from './components/Header';
+import messagesList from './data/messagesList';
 
 
 function App() {
+
+  const [messages, setMessagesList] = useState(messagesList)
+
   return (
-    <div className="">
+    <div className="body">
       <Header />
       <SelectAll />
-     <Menssages />
+     <Menssages messages={messages}/>
     </div>
   );
 }

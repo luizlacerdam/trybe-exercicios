@@ -1,12 +1,14 @@
 import React from "react";
-import messagesList from "../data/messagesList";
-function Menssages() {
+function Menssages({messages}) {
     return (
-        <div>
-            {messagesList.map((mens) => (
-                <div>{mens.title} 
+        <div className="msgs">
+            {messages.map((mes) => (
+                <div className="msg" key={mes.id}>
+                    {mes.title} 
+                <div className="read-unread">
                 <button id="read" type="button">read</button>
                 <button id="unread" type="button">unread</button>
+                </div>
                 </div>
             ))}
         </div>
