@@ -4,7 +4,10 @@ function Menssages() {
     return (
         <div>
             {messagesList.map((mens) => (
-                <div>{mens.title}</div>
+                <div>{mens.title} 
+                <button id="read" type="button">read</button>
+                <button id="unread" type="button">unread</button>
+                </div>
             ))}
         </div>
     )
