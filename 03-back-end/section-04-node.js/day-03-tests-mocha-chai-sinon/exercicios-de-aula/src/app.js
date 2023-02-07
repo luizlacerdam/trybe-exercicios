@@ -33,6 +33,28 @@ app.get('/chocolates', async (req, res) => {
     }
 });
 
+app.get('/chocolates/total', async (req, res) => {
+    try {
+        const chocolates = await readFile();
+        res.status(200).json({ totalChocolates: chocolates.chocolates.length });
+    } catch (error) {
+        res.status(500).send({ message: error.message });
+    }
+});
+app.get('/chocolates/search', async (req, res) => {
+    try {
+        const { name } = req.query;
+        const chocolates = await readFile();
+        const busca = chocolates.chocolates.filter((chocolate) => chocolate.name
+            .toLowerCase()
+            .includes(name.toLowerCase()));
+        res.status(busca.length === 0 ? 404 : 200)
+            .json(busca);
+    } catch (error) {
+        res.status(500).send({ message: error.message });
+    }
+});
+
 app.get('/chocolates/:id', async (req, res) => {
     try {
         const chocolates = await readFile();
@@ -58,5 +80,4 @@ app.get('/chocolates/brand/:brandId', async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 });
-
 module.exports = app;
