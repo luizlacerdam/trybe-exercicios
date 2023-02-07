@@ -37,6 +37,9 @@ app.get('/chocolates/:id', async (req, res) => {
     try {
         const chocolates = await readFile();
         const chocolate = chocolates.chocolates.find(({ id }) => id === Number(req.params.id));
+        if (!chocolate) {
+            res.status(404).send({ message: 'Chocolate not found' });
+        }
         res.status(200).json(chocolate);
     } catch (error) {
         res.status(500).send({ message: error.message });
@@ -46,7 +49,10 @@ app.get('/chocolates/:id', async (req, res) => {
 app.get('/chocolates/brand/:brandId', async (req, res) => {
     try {
         const chocolates = await readFile();
-        const chocolate = chocolates.brands.find(({ id }) => id === Number(req.params.brandId));
+        const chocolate = chocolates.chocolates.filter(({ brandId }) => brandId === Number(req.params.brandId));
+        // if (!chocolate) {
+        //     res.status(404).send('Brand not found');
+        // }
         res.status(200).json(chocolate);
     } catch (error) {
         res.status(500).send({ message: error.message });
