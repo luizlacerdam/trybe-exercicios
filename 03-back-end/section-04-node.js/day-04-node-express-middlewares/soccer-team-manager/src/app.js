@@ -1,38 +1,20 @@
 // src/app.js
 const express = require('express');
+const validateTeam = require('./middlewares/validateTeam');
+const existingId = require('./middlewares/existingId');
+const teams = require('./teams');
 
 const app = express();
-    app.use(express.json());
-    const teams = [
-        {
-        id: 1,
-        name: 'São Paulo Futebol Clube',
-        initials: 'SPF',
-        },
-        {
-        id: 2,
-        name: 'Clube Atlético Mineiro',
-        initials: 'CAM',
-        },
-    ];
-
-  const existingId = (req, res, next) => {
-    const id = Number(req.params.id);
-    if (teams.some((team) => team.id === id)) {
-      return next();
-    } 
-      res.sendStatus(404);
-  };
+app.use(express.json());
 
   app.get('/teams', (req, res) => res.status(200).json({ teams }));
 
-  app.post('/teams', (req, res) => {
+  app.post('/teams', validateTeam, (req, res) => {
     const newTeam = { ...req.body };
     teams.push(newTeam);
-  
     res.status(201).json({ team: newTeam });
   });
-  app.put('/teams/:id', existingId, (req, res) => {
+  app.put('/teams/:id', existingId, validateTeam, (req, res) => {
     const { id } = req.params;
     const { name, initials } = req.body;
     const updateTeam = teams.find((team) => team.id === Number(id));
