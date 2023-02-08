@@ -34,4 +34,5 @@ app.use(express.json());
     teams.splice(arrayPosition, 1);
     res.status(200).end();
   });
+  app.use((req, res) => res.sendStatus(404));
 module.exports = app;
