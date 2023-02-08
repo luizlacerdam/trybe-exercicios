@@ -35,13 +35,7 @@ const app = express();
   app.put('/teams/:id', existingId, (req, res) => {
     const { id } = req.params;
     const { name, initials } = req.body;
-  
     const updateTeam = teams.find((team) => team.id === Number(id));
-  
-    if (!updateTeam) {
-      res.status(404).json({ message: 'Team not found' });
-    }
-  
     updateTeam.name = name;
     updateTeam.initials = initials;
     res.status(200).json({ updateTeam });
@@ -52,11 +46,10 @@ const app = express();
     res.status(200).json({ teamExiste });
   });
 
-  app.delete('/teams/:id', (req, res) => {
+  app.delete('/teams/:id', existingId, (req, res) => {
     const { id } = req.params;
     const arrayPosition = teams.findIndex((team) => team.id === Number(id));
     teams.splice(arrayPosition, 1);
-  
     res.status(200).end();
   });
 module.exports = app;
