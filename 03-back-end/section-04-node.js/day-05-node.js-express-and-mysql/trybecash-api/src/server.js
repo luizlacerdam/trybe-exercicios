@@ -11,5 +11,7 @@ app.listen(PORT, async () => {
     const [result] = await connection.execute('SELECT 1');
     if (result) {
         console.log('MySQL connection OK');
+    } else {
+        console.log('MySQL DOWN');
     }
 });
