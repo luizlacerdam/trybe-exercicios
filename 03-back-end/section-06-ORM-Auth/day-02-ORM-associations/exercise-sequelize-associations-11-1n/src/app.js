@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-/** 
- * Substitua este comentário pelas suas rotas!
-*/
+const { getAccountById } = require('./controllers/account');
+
+app.get('/accounts/:id', getAccountById);
 
 module.exports = app;
