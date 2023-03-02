@@ -29,5 +29,11 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         }
     );
+    Comment.associate = (models) => {
+        Comment.belongsTo(models.Account, {
+            foreignKey: 'accountId',
+            as: 'profile',
+        });
+    }
     return Comment;
 };
