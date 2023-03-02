@@ -35,7 +35,31 @@ const getAccountByIdLazy = async (req, res) => {
     }
   };
 
+  const saveAccountAndProfile = async (req, res) => {
+    try {
+        const { email, password, firstName, lastName, phone } = req.body;
+        const account = await Account.create({ email, password });
+        if (!account) {
+            return res.status(404).send({ message: 'Erro ao cadastrar uma conta!' });
+          }
+      
+          const profile = await Profile.create(
+            { firstName, lastName, phone, accountId: account.id },
+          );
+          
+          if (!profile) {
+            return res.status(404).send({ message: 'Erro ao cadastrar um perfil!' });
+          }
+          
+          return res.status(200).json({ message: 'Conta cadastrada com sucesso' });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Algo deu errado!' });
+    }
+  };
+
 module.exports = {
     getAccountById,
     getAccountByIdLazy,
+    saveAccountAndProfile,
   };
