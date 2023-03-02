@@ -18,6 +18,11 @@ module.exports = (sequelize, DataTypes) => {
             tableName: 'Accounts',
             underscored: true,
         });
-
+    Account.associate = (models) => {
+        Account.hasOne(models.Profile, {
+            foreignKey: 'accountId',
+            as: 'profile',
+        });
+    };
     return Account;
 };

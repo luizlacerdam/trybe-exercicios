@@ -21,6 +21,11 @@ module.exports = (sequelize, DataTypes) => {
             tableName: 'Profiles',
             underscored: true,
         });
-
+    Profile.associate = (models) => {
+        Profile.belongsTo(models.Account, {
+            foreignKey: 'accountId',
+            as: 'profile',
+        });
+    };
     return Profile;
 };
