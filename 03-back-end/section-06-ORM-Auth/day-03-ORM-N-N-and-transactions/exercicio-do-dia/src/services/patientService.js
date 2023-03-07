@@ -21,10 +21,22 @@ const createPatient = async (fullname, plan_id) => {
     const newPatient = await Patient.create({ fullname, plan_id });
     return newPatient;
 };
+
+const getAllPatientsAndSurgeriesNoDoctor = async () => {
+    const patients = await Patient.findAll({ 
+        include: { 
+            model: Surgery, 
+            as: 'surgeries', 
+            attributes: { exclude: ['doctor'] },
+            through: { attributes: [] }, 
+        },
+    });
+    return patients;
+};
 module.exports = {
     getAll,
     getById,
     getAllPatientsSurgeries,
     createPatient,
-    
+    getAllPatientsAndSurgeriesNoDoctor,
 };
