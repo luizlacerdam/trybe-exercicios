@@ -24,7 +24,18 @@ const getById = async (req, res) => {
     }
 };
 
+const getAllPatientsSurgeries = async (_req, res) => {
+    try {
+        const patients = await PatientService.getAllPatientsSurgeries();
+        return res.status(200).json(patients);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Ocorreu um erro' });
+    }
+};
+
 module.exports = {
     getAll,
     getById,
+    getAllPatientsSurgeries,
 };
