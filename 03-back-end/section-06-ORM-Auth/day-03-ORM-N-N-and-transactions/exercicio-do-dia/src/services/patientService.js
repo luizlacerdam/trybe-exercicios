@@ -6,7 +6,7 @@ const getAll = async () => {
 };
 
 const getById = async (id) => {
-    const patients = await Patient.findOne({ where: { id } });
+    const patients = await Patient.findOne({ where: { patient_id: id } });
     return patients;
 };
 
