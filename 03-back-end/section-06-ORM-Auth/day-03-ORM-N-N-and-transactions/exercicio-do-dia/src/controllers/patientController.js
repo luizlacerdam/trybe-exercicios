@@ -34,8 +34,20 @@ const getAllPatientsSurgeries = async (_req, res) => {
     }
 };
 
+const createPatient = async (req, res) => {
+    try {
+        const { fullname, plan_id } = req.body;
+        const newPatient = await PatientService.createPatient(fullname, plan_id);
+        return res.status(200).json(newPatient);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Ocorreu um erro' });
+    }
+};
+
 module.exports = {
     getAll,
     getById,
     getAllPatientsSurgeries,
+    createPatient,
 };

@@ -17,9 +17,14 @@ const getAllPatientsSurgeries = async () => {
     return patients;
 };
 
+const createPatient = async (fullname, plan_id) => {
+    const newPatient = await Patient.create({ fullname, plan_id });
+    return newPatient;
+};
 module.exports = {
     getAll,
     getById,
     getAllPatientsSurgeries,
+    createPatient,
     
 };
