@@ -106,6 +106,14 @@ class Student extends Person {
     }
 }
 
+interface Employee {
+    registration: number;
+    salary: number;
+    admissionDate: Date;
+    generateRegistration(): string;
+}
+
+
 const maria = new Person('Msdds', new Date('1980/01/25'));
 const luiza = new Person('Luiza Andrade', new Date('2005/10/02'));
 
