@@ -1,3 +1,5 @@
+import progressNotification from "./notifications";
+
 class ReadingTracker {
     private readingGoal: number;
     private booksRead: number;
@@ -9,20 +11,14 @@ class ReadingTracker {
     trackReadings(readsCount: number): void {
         this.booksRead += readsCount;
         if (this.booksRead >= this.readingGoal) {
-            this.progressNotification(
+            progressNotification(
                 'Congratulations! You\'ve reached your reading goal!',
             );
             return;
         }
-        this.progressNotification(
+        progressNotification(
             'There are still some books to go!',
         );
-    }
-
-
-
-    progressNotification(message: string): void {
-        console.log(message);
     }
 }
 
