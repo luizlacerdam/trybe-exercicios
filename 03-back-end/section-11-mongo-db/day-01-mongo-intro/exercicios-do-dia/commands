@@ -1,5 +1,8 @@
 Executando conteiner via terminal
 docker run --name mongodb_docker -v $(pwd)/backup:/data/db -p 8080:27017 -d mongo
 
+copiar arquivo para conteiner docker
+docker cp nome-do-arquivo.json <nome-do-container-ou-id>:/tmp/nome-do-arquivo.json
+docker exec <nome-do-container-ou-id> mongoimport -d <nome-do-banco> -c <nome-da-coleção> (--jsonArray) --file /tmp/nome-do-arquivo.json
 Utilizando o mongoimport
-mongoimport --port <port> -d <db> -c <collection> --jsonArray --file <file>
+mongoimport --port <port> -d <db> -c <collection> --jsonArray --maintainInsertionOrder --file <file>

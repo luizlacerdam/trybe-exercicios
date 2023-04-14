@@ -29,3 +29,15 @@ db.bios.find().limit(3).pretty()
 //ex 8
 use('bios')
 db.bios.find({}).skip(5).limit(2)
+
+//ex 9
+use('books')
+db.books.countDocuments()
+
+//ex 10
+use('books')
+db.books.countDocuments({ status: 'PUBLISH' })
+
+//ex 11 
+use('books')
+db.books.find({}, { _id: 0, title: 1, isbn: 1, pageCount: 1 }).limit(3).pretty()
