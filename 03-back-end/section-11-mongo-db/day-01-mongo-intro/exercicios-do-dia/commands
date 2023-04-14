@@ -1,0 +1,5 @@
+Executando conteiner via terminal
+docker run --name mongodb_docker -v $(pwd)/backup:/data/db -p 8080:27017 -d mongo
+
+Utilizando o mongoimport
+mongoimport --port <port> -d <db> -c <collection> --jsonArray --file <file>
