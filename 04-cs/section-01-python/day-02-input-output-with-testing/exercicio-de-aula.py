@@ -21,7 +21,7 @@ def numbers_sum():
 
 # 03
 
-def aprovado():
+def reprovados():
     line_list = []
     with open("arquivo.txt", "r") as file:
         for line in file:
@@ -31,4 +31,3 @@ def aprovado():
 
     file.close()
     print(line_list)
-aprovado()
