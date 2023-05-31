@@ -19,3 +19,17 @@ def mediaAritimetica(arr):
     return print(total / len(arr))
 
 mediaAritimetica(list)
+
+#03
+
+def desenho(n):
+    linhas = 0
+    if(n <= 1):
+        return 'insira um numero maior que 1'
+    else:
+        while linhas < n:
+            print(n * '*')
+            linhas += 1
+
+
+desenho(5)
