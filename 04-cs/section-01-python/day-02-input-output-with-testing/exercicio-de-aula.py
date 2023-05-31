@@ -20,3 +20,15 @@ def numbers_sum():
     print(soma)
 
 # 03
+
+def aprovado():
+    line_list = []
+    with open("arquivo.txt", "r") as file:
+        for line in file:
+            line_tupla = line.split()
+            if int(line_tupla[1]) < 6:
+                line_list.append(line_tupla)
+
+    file.close()
+    print(line_list)
+aprovado()
