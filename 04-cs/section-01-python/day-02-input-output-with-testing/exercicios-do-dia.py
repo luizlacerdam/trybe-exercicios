@@ -19,4 +19,22 @@ def scrambled_words():
         anwser = input('Digite a palavra: ')
         tentativas += 1
     
+
+
+# 03
+def scrambled_words():
+    lista = []
+    with open('palavras.txt') as file:
+        for row in file:
+            lista.append(row.strip())
+    file.close()
+    word_chosen = random.choice(lista)
+    scrambled_word = "".join(random.sample(word_chosen, len(word_chosen)))
+    anwser = ''
+    print(scrambled_word)
+    tentativas = 0
+    while anwser != word_chosen and tentativas < 3:
+        anwser = input('Digite a palavra: ')
+        tentativas += 1
+    
 scrambled_words()

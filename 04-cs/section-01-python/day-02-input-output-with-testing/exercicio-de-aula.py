@@ -28,6 +28,5 @@ def reprovados():
             line_tupla = line.split()
             if int(line_tupla[1]) < 6:
                 line_list.append(line_tupla)
-
     file.close()
     print(line_list)
