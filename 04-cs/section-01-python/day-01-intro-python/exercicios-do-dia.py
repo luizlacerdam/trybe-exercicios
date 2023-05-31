@@ -33,3 +33,16 @@ def desenho(n):
 
 
 desenho(5)
+
+#04
+
+nameList = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
+
+def maiorString(stringList):
+    lastName = ''
+    for name in stringList:
+        if len(name) > len(lastName):
+            lastName = name
+    return print(lastName)
+
+maiorString(nameList)
