@@ -70,4 +70,6 @@ def percent_books():
     with open("report.csv", "w") as file:
         write_csv_report(file, header, books_percentage_rows)
    
-percent_books()
+# 05
+def fizzbuzz(n):
+    return n
