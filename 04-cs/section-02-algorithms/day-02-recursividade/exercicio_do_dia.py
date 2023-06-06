@@ -19,4 +19,22 @@ def pair_counter(n):
 #     return counter
 
 
-print(pair_counter(4))
+# 02
+
+
+def conta_pares(n):
+    if n == 1:
+        return 0
+    elif n % 2 == 0:
+        return 1 + conta_pares(n - 1)
+    else:
+        return conta_pares(n - 1)
+
+
+# 03
+
+
+def mdc(a, b):
+    if b == 0:
+        return a
+    return mdc(b, a % b)
