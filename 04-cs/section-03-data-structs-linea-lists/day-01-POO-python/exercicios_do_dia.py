@@ -74,3 +74,40 @@ class estatistica:
         else:
             moda = lista_ordenada[int(tamanho / 2)]
         return moda
+
+
+# 03
+from abc import ABC, abstractmethod
+
+
+class FiguraGeometrica(ABC):
+    @abstractmethod
+    def area(self, base, altura):
+        return base * altura
+
+    @abstractmethod
+    def perimetro(self, base, altura):
+        return 2 * (base + altura)
+
+
+class Quadrado(FiguraGeometrica):
+    def __init__(self, lado):
+        self.__lado = lado
+
+    def area(self):
+        return super().area(self.__lado, self.__lado)
+
+    def perimetro(self):
+        return super().perimetro(self.__lado, self.__lado)
+
+
+class Retangulo(FiguraGeometrica):
+    def __init__(self, base, altura):
+        self.__base = base
+        self.__altura = altura
+
+    def area(self):
+        return super().area(self.__base, self.__altura)
+
+    def perimetro(self):
+        return super().perimetro(self.__base, self.__altura)
