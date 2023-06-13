@@ -42,3 +42,35 @@ class TV:
 
 
 tv = TV(42)
+
+# 02
+
+
+class estatistica:
+    def __init__(self, lista):
+        self.__lista = lista
+
+    def media(self):
+        return sum(self.__lista) / len(self.__lista)
+
+    def mediana(self):
+        lista_ordenada = sorted(self.__lista)
+        tamanho = len(self.__lista)
+        if tamanho % 2 == 0:
+            mediana = (
+                lista_ordenada[int(tamanho / 2)] + lista_ordenada[int(tamanho / 2) - 1]
+            ) / 2
+        else:
+            mediana = lista_ordenada[int(tamanho / 2)]
+        return mediana
+
+    def moda(self):
+        lista_ordenada = sorted(self.__lista)
+        tamanho = len(self.__lista)
+        if tamanho % 2 == 0:
+            moda = (
+                lista_ordenada[int(tamanho / 2)] + lista_ordenada[int(tamanho / 2) - 1]
+            ) / 2
+        else:
+            moda = lista_ordenada[int(tamanho / 2)]
+        return moda
