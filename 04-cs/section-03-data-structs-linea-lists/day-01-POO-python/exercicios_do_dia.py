@@ -1,3 +1,6 @@
+# 01
+
+
 class TV:
     def __init__(self, tamanho):
         self.__canal = 1
@@ -20,3 +23,22 @@ class TV:
 
     def ligar_desligar(self):
         self.__ligada = not self.__ligada
+
+    @property
+    def canal(self):
+        return self.__canal
+
+    @property
+    def volume(self):
+        return self.__volume
+
+    @property
+    def tamanho(self):
+        return self.__tamanho
+
+    @property
+    def ligada(self):
+        return self.__ligada
+
+
+tv = TV(42)
