@@ -6,7 +6,7 @@ class Employee:
 
 class HashMap:
     def __init__(self):
-        self._buckets = [None for i in range(10)]
+        self._buckets = [[] for i in range(10)]
 
     def get_address(self, id_num):
         return id_num % 10
@@ -22,6 +22,11 @@ class HashMap:
     def has(self, id_num):
         address = self.get_address(id_num)
         return self._buckets[address] is not None
+
+    def update_value(self, id_num, new_name):
+        address = self.get_address(id_num)
+        self._buckets[address].name = new_name
+        return new_name
 
 
 employees = [(14, "name1"), (23, "name2"), (10, "name3"), (9, "name4")]
